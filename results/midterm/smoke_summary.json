@@ -1,0 +1,118 @@
+{
+  "provenance": "Saved Stage 3 exam smoke tests, not rerun for portfolio publication.",
+  "checks": [
+    {
+      "name": "text query returns Top-10",
+      "passed": true
+    },
+    {
+      "name": "text query recommends expected document",
+      "passed": true
+    },
+    {
+      "name": "text query ranks expected document first",
+      "passed": true
+    },
+    {
+      "name": "text query returns Top-20",
+      "passed": true
+    },
+    {
+      "name": "Top-20 contains expected document",
+      "passed": true
+    },
+    {
+      "name": "adaptive source_docs count is independent of UI Top-K",
+      "passed": true
+    },
+    {
+      "name": "OCR succeeds",
+      "passed": true
+    },
+    {
+      "name": "OCR extracts invoice identifier",
+      "passed": true
+    },
+    {
+      "name": "image OCR query recommends expected document",
+      "passed": true
+    },
+    {
+      "name": "image OCR query ranks expected document first",
+      "passed": true
+    },
+    {
+      "name": "OCR failure is reported for a blank image",
+      "passed": true
+    },
+    {
+      "name": "judge is not called while disabled",
+      "passed": true
+    },
+    {
+      "name": "Streamlit app runs without exceptions",
+      "passed": true
+    },
+    {
+      "name": "Streamlit text query runs without exceptions",
+      "passed": true
+    },
+    {
+      "name": "Streamlit shows 10 ranked cards",
+      "passed": true
+    },
+    {
+      "name": "Streamlit judge button is absent when disabled",
+      "passed": true
+    },
+    {
+      "name": "Streamlit Top-20 runs without exceptions",
+      "passed": true
+    },
+    {
+      "name": "Streamlit shows 20 ranked cards",
+      "passed": true
+    },
+    {
+      "name": "Streamlit server health endpoint is ok",
+      "passed": true
+    },
+    {
+      "name": "Stage 2 evaluation reruns successfully",
+      "passed": true
+    },
+    {
+      "name": "Stage 2 validation F1 is unchanged",
+      "passed": true
+    },
+    {
+      "name": "final test predictions are unchanged",
+      "passed": true
+    },
+    {
+      "name": "Ollama connection failure is reported",
+      "passed": true
+    },
+    {
+      "name": "local Ollama judge available",
+      "passed": true
+    },
+    {
+      "name": "Streamlit judge button appears when enabled",
+      "passed": true
+    },
+    {
+      "name": "Streamlit judge runs without exceptions",
+      "passed": true
+    },
+    {
+      "name": "Streamlit judge displays an acceptable decision",
+      "passed": true
+    },
+    {
+      "name": "Streamlit judge displays a justification",
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

@@ -1,0 +1,5 @@
+configuration,macro_precision,macro_recall,macro_f1,exact_matches,imperfect,avg_docs
+A_baseline,0.912000,0.898800,0.900655,112,13,1.0000
+B_hybrid_field_rerank,0.920000,0.906800,0.908655,113,12,1.0000
+C_intent_routing,1.000000,1.000000,1.000000,125,0,1.1520
+D_hybrid_plus_intent,1.000000,1.000000,1.000000,125,0,1.1520

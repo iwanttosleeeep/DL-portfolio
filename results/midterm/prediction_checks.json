@@ -1,0 +1,189 @@
+{
+  "selected_config": "D_hybrid_plus_intent",
+  "config": {
+    "use_hybrid": true,
+    "use_intent": true
+  },
+  "validation_macro_f1": 1.0,
+  "validation_exact_matches": 125,
+  "checks": {
+    "valid_json": true,
+    "question_count": 116,
+    "expected_question_count": 116,
+    "question_count_matches": true,
+    "ids_exactly_once": true,
+    "question_texts_match": true,
+    "source_docs_exist": true,
+    "answer_empty": true,
+    "no_duplicate_source_docs": true,
+    "exact_four_field_schema": true,
+    "generated_by_selected_algorithm": true,
+    "all_source_docs_nonempty": true,
+    "identifier_signal_consistency": true
+  },
+  "identifier_signal_checks": [
+    {
+      "id": "t026",
+      "identifier_match": true
+    },
+    {
+      "id": "t027",
+      "identifier_match": true
+    },
+    {
+      "id": "t028",
+      "identifier_match": true
+    },
+    {
+      "id": "t029",
+      "identifier_match": true
+    },
+    {
+      "id": "t030",
+      "identifier_match": true
+    },
+    {
+      "id": "t031",
+      "identifier_match": true
+    },
+    {
+      "id": "t032",
+      "identifier_match": true
+    },
+    {
+      "id": "t033",
+      "identifier_match": true
+    },
+    {
+      "id": "t034",
+      "identifier_match": true
+    },
+    {
+      "id": "t035",
+      "identifier_match": true
+    },
+    {
+      "id": "t036",
+      "identifier_match": true
+    },
+    {
+      "id": "t037",
+      "identifier_match": true
+    },
+    {
+      "id": "t038",
+      "identifier_match": true
+    },
+    {
+      "id": "t039",
+      "identifier_match": true
+    },
+    {
+      "id": "t040",
+      "identifier_match": true
+    },
+    {
+      "id": "t041",
+      "identifier_match": true
+    },
+    {
+      "id": "t042",
+      "identifier_match": true
+    },
+    {
+      "id": "t043",
+      "identifier_match": true
+    },
+    {
+      "id": "t044",
+      "identifier_match": true
+    },
+    {
+      "id": "t045",
+      "identifier_match": true
+    },
+    {
+      "id": "t046",
+      "identifier_match": true
+    },
+    {
+      "id": "t047",
+      "identifier_match": true
+    },
+    {
+      "id": "t048",
+      "identifier_match": true
+    },
+    {
+      "id": "t049",
+      "identifier_match": true
+    },
+    {
+      "id": "t050",
+      "identifier_match": true
+    },
+    {
+      "id": "t086",
+      "identifier_match": true
+    },
+    {
+      "id": "t087",
+      "identifier_match": true
+    },
+    {
+      "id": "t088",
+      "identifier_match": true
+    },
+    {
+      "id": "t089",
+      "identifier_match": true
+    },
+    {
+      "id": "t090",
+      "identifier_match": true
+    },
+    {
+      "id": "t091",
+      "identifier_match": true
+    },
+    {
+      "id": "t092",
+      "identifier_match": true
+    },
+    {
+      "id": "t093",
+      "identifier_match": true
+    },
+    {
+      "id": "t094",
+      "identifier_match": true
+    },
+    {
+      "id": "t095",
+      "identifier_match": true
+    }
+  ],
+  "method_counts": {
+    "aggregate_sum": 2,
+    "filtered_set": 1,
+    "global_extreme": 3,
+    "hybrid_single": 100,
+    "policy_intent": 10
+  },
+  "intent_counts": {
+    "aggregate_sum": 2,
+    "filtered_set": 1,
+    "global_extreme": 3,
+    "policy": 10,
+    "single": 100
+  },
+  "document_count": 110,
+  "prediction_sha256": "49582b09ef7935b1a1d477bb17a4183f167053208586167cd0254d43774f9c5b",
+  "returned_document_counts": {
+    "1": 113,
+    "3": 1,
+    "25": 2
+  },
+  "test_f1": null,
+  "note": "Saved exam artifacts; hidden test labels are unavailable. Integrity checks do not measure test accuracy."
+}

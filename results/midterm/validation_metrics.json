@@ -1,0 +1,327 @@
+{
+  "validation_questions": 125,
+  "selection_rule": "max macro F1, then precision, recall, exact matches; preference D>C>B>A only on a complete tie",
+  "best_config": "D_hybrid_plus_intent",
+  "best_config_settings": {
+    "use_hybrid": true,
+    "use_intent": true
+  },
+  "configs": {
+    "A_baseline": {
+      "macro_precision": 0.912,
+      "macro_recall": 0.8987999999999999,
+      "macro_f1": 0.9006545454545456,
+      "exact_matches": 112,
+      "imperfect": 13,
+      "avg_returned_docs": 1.0,
+      "official": {
+        "scored": 125,
+        "precision": 0.912,
+        "recall": 0.8988,
+        "f1": 0.9007
+      },
+      "by_category": {
+        "aggregate_global": {
+          "n": 3,
+          "macro_precision": 0.0,
+          "macro_recall": 0.0,
+          "macro_f1": 0.0,
+          "exact_matches": 0
+        },
+        "aggregate_multi_doc": {
+          "n": 3,
+          "macro_precision": 0.6666666666666666,
+          "macro_recall": 0.11666666666666665,
+          "macro_f1": 0.19393939393939394,
+          "exact_matches": 0
+        },
+        "bank_statement": {
+          "n": 10,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 10
+        },
+        "credit_card_bill": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "invoice": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "pharmacy_receipt": {
+          "n": 5,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 5
+        },
+        "policy": {
+          "n": 19,
+          "macro_precision": 0.631578947368421,
+          "macro_recall": 0.631578947368421,
+          "macro_f1": 0.631578947368421,
+          "exact_matches": 12
+        },
+        "receipt": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "utility_bill": {
+          "n": 10,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 10
+        }
+      }
+    },
+    "B_hybrid_field_rerank": {
+      "macro_precision": 0.92,
+      "macro_recall": 0.9067999999999999,
+      "macro_f1": 0.9086545454545455,
+      "exact_matches": 113,
+      "imperfect": 12,
+      "avg_returned_docs": 1.0,
+      "official": {
+        "scored": 125,
+        "precision": 0.92,
+        "recall": 0.9068,
+        "f1": 0.9087
+      },
+      "by_category": {
+        "aggregate_global": {
+          "n": 3,
+          "macro_precision": 0.0,
+          "macro_recall": 0.0,
+          "macro_f1": 0.0,
+          "exact_matches": 0
+        },
+        "aggregate_multi_doc": {
+          "n": 3,
+          "macro_precision": 0.6666666666666666,
+          "macro_recall": 0.11666666666666665,
+          "macro_f1": 0.19393939393939394,
+          "exact_matches": 0
+        },
+        "bank_statement": {
+          "n": 10,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 10
+        },
+        "credit_card_bill": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "invoice": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "pharmacy_receipt": {
+          "n": 5,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 5
+        },
+        "policy": {
+          "n": 19,
+          "macro_precision": 0.6842105263157895,
+          "macro_recall": 0.6842105263157895,
+          "macro_f1": 0.6842105263157895,
+          "exact_matches": 13
+        },
+        "receipt": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "utility_bill": {
+          "n": 10,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 10
+        }
+      }
+    },
+    "C_intent_routing": {
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "exact_matches": 125,
+      "imperfect": 0,
+      "avg_returned_docs": 1.152,
+      "official": {
+        "scored": 125,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "by_category": {
+        "aggregate_global": {
+          "n": 3,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 3
+        },
+        "aggregate_multi_doc": {
+          "n": 3,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 3
+        },
+        "bank_statement": {
+          "n": 10,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 10
+        },
+        "credit_card_bill": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "invoice": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "pharmacy_receipt": {
+          "n": 5,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 5
+        },
+        "policy": {
+          "n": 19,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 19
+        },
+        "receipt": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "utility_bill": {
+          "n": 10,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 10
+        }
+      }
+    },
+    "D_hybrid_plus_intent": {
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "exact_matches": 125,
+      "imperfect": 0,
+      "avg_returned_docs": 1.152,
+      "official": {
+        "scored": 125,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "by_category": {
+        "aggregate_global": {
+          "n": 3,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 3
+        },
+        "aggregate_multi_doc": {
+          "n": 3,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 3
+        },
+        "bank_statement": {
+          "n": 10,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 10
+        },
+        "credit_card_bill": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "invoice": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "pharmacy_receipt": {
+          "n": 5,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 5
+        },
+        "policy": {
+          "n": 19,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 19
+        },
+        "receipt": {
+          "n": 25,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 25
+        },
+        "utility_bill": {
+          "n": 10,
+          "macro_precision": 1.0,
+          "macro_recall": 1.0,
+          "macro_f1": 1.0,
+          "exact_matches": 10
+        }
+      }
+    }
+  }
+}

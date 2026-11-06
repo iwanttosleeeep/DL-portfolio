@@ -1,6 +1,6 @@
 # Assignment 1 source guide
 
-[View the results page](https://iwanttosleeeep.github.io/stat6207-portfolio/assignment1.html)
+[View the results page](https://iwanttosleeeep.github.io/DL-portfolio/assignment1.html)
 
 These are the original Assignment 1 Python scripts, relocated from the repository's
 top-level `code/` directory without modifying their contents or experimental logic.

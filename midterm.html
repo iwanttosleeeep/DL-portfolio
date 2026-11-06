@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm - STAT6207 Portfolio</title>
+  <meta name="description" content="STAT6207 midterm: document retrieval with TF-IDF, hybrid ranking, intent routing, local OCR and an optional Ollama judge.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>STAT6207 Applied Deep Learning</h1>
+    <p class="subtitle">Coursework Portfolio &middot; Midterm</p>
+  </div>
+</header>
+
+<nav aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="assignment1.html">Assignment 1</a>
+  <a href="assignment2.html">Assignment 2</a>
+  <a href="assignment3.html">Assignment 3</a>
+  <a href="midterm.html" aria-current="page">Midterm</a>
+</nav>
+
+<main><div class="container">
+<div class="page-intro"><h2>Document Retrieval with Hybrid Search &amp; Intent Routing</h2><p>Midterm programming project · 23 October 2026</p><p><a href="https://github.com/iwanttosleeeep/DL-portfolio/tree/main/code/midterm">Browse midterm code →</a></p></div>
+<section class="section" id="section-1"><h2>1. Objective</h2>
+<p>The midterm programming task builds the retrieval stage of a RAG system: identify the document or complete document set needed to answer a question. Inputs may be text or images; the interface supports configurable Top-K results and an optional local language-model judge.</p>
+<p>Evaluation compares predicted <code>source_docs</code> with ground-truth document sets using macro precision, recall and F1. Final answer generation is outside the task: the JSON <code>answer</code> field stays empty.</p>
+<div class="highlight"><p><strong>Saved validation result:</strong> macro F1 improves from <strong>0.9007</strong> to <strong>1.0000</strong>, with exact document-set matches rising from <strong>112/125</strong> to <strong>125/125</strong>. Hidden test labels are unavailable, so no test F1 is claimed.</p></div>
+</section>
+
+<section class="section" id="section-2"><h2>2. Dataset &amp; Evaluation Protocol</h2>
+<div class="table-scroll" role="region" aria-label="Course-provided Markdown corpus" tabindex="0"><table><caption>Course-provided Markdown corpus</caption><thead><tr><th scope="col">Document type</th><th scope="col">Count</th></tr></thead><tbody><tr><th scope="row">Credit-card bills</th><td>25</td></tr><tr><th scope="row">Invoices</th><td>25</td></tr><tr><th scope="row">Store receipts</th><td>25</td></tr><tr><th scope="row">Bank statements</th><td>10</td></tr><tr><th scope="row">Utility bills</th><td>10</td></tr><tr><th scope="row">Pharmacy receipts</th><td>5</td></tr><tr><th scope="row">Policy documents</th><td>10</td></tr><tr><th scope="row">Total</th><td>110</td></tr></tbody></table></div><p>The corpus contains 110 documents, averaging 101.96 words. The validation set contains 125 questions and 144 ground-truth document links: 122 questions require one document and three require multiple documents. The separate test set contains 116 unlabelled questions.</p>
+<p>For each question, precision is the fraction of retrieved documents that are relevant, recall is the fraction of required documents retrieved, and F1 is their harmonic mean. Scores are averaged across questions. Exact match requires the entire predicted set to equal the ground-truth set.</p>
+<p>Algorithm selection uses validation results only. The saved official evaluator scored all 125 validation questions with no unmatched or skipped questions.</p>
+</section>
+
+<section class="section" id="section-3"><h2>3. TF-IDF Baseline</h2>
+<p>The baseline uses word unigrams and bigrams, sublinear term frequency, English stop words and cosine similarity. Top-1 is the primary output; larger fixed values of K are diagnostic comparisons. No neural embedding model is needed.</p><div class="table-scroll" role="region" aria-label="Fixed-K validation retrieval" tabindex="0"><table><caption>Fixed-K validation retrieval</caption><thead><tr><th scope="col">K</th><th scope="col">Macro precision</th><th scope="col">Macro recall</th><th scope="col">Macro F1</th><th scope="col">Exact matches</th></tr></thead><tbody><tr><th scope="row">1</th><td>0.9120</td><td>0.8988</td><td>0.9007</td><td>112/125</td></tr><tr><th scope="row">3</th><td>0.3253</td><td>0.9224</td><td>0.4695</td><td>0/125</td></tr><tr><th scope="row">5</th><td>0.2032</td><td>0.9350</td><td>0.3228</td><td>0/125</td></tr><tr><th scope="row">10</th><td>0.1096</td><td>0.9440</td><td>0.1870</td><td>1/125</td></tr></tbody></table></div><figure class="figure"><a href="assets/midterm/baseline_print.png" aria-label="Open full-size figure: Baseline precision, recall and F1 across K, with category results"><img src="assets/midterm/baseline_print.png" alt="Baseline precision, recall and F1 across K, with category results" loading="lazy"></a><figcaption>Figure 1. Saved baseline results. Select the image to view it full size.</figcaption></figure><p>Increasing K raises recall slightly but introduces irrelevant documents for the many single-document questions. Top-1 gives the best F1 among these settings; a fixed K cannot reliably represent both single-document and aggregate queries.</p>
+</section>
+
+<section class="section" id="section-4"><h2>4. Two Retrieval Improvements</h2>
+<h3>Improvement 1: hybrid retrieval and field-aware reranking</h3>
+<p>Word TF-IDF, character <code>char_wb</code> 3–5 gram TF-IDF and BM25 are normalized per query and combined with weights <strong>0.45 / 0.40 / 0.15</strong>. BM25 uses <code>k1=1.5</code> and <code>b=0.75</code>. Parsed identifiers, names, companies, dates and document types add exact-match evidence to the ranking.</p>
+<p>Identifier matches receive +2.0, names +0.8, companies +0.6, primary dates +0.45 each (capped at +0.8), and document-type hints +0.15. The implementation uses reusable field extraction rather than question-to-document lookup tables.</p>
+<h3>Improvement 2: intent-aware structured retrieval</h3>
+<p>The router distinguishes single-document facts, policy paraphrases, global extrema, aggregate sums and filtered sets. Policy concepts address lexical mismatch; numerical parsing supports extrema; sums return every document in a category; filters return every matching document. Unmatched structured branches fall back to the best single document.</p>
+<p>The recommended evidence set is adaptive and independent of the UI Top-K display count.</p><figure class="figure"><a href="assets/midterm/architecture.png" aria-label="Open full-size figure: Corpus indexes, query routing, adaptive source documents and optional judge"><img src="assets/midterm/architecture.png" alt="Corpus indexes, query routing, adaptive source documents and optional judge" loading="lazy"></a><figcaption>Figure 2. Original report architecture, including the retrieval and optional judge paths. Select the image to view it full size.</figcaption></figure>
+</section>
+
+<section class="section" id="section-5"><h2>5. Validation Comparison</h2>
+<div class="table-scroll" role="region" aria-label="Four configurations on the same 125 validation questions" tabindex="0"><table><caption>Four configurations on the same 125 validation questions</caption><thead><tr><th scope="col">Configuration</th><th scope="col">Precision</th><th scope="col">Recall</th><th scope="col">F1</th><th scope="col">Exact matches</th><th scope="col">Mean docs</th></tr></thead><tbody><tr><th scope="row">A · Baseline</th><td>0.9120</td><td>0.8988</td><td>0.9007</td><td>112/125</td><td>1.000</td></tr><tr><th scope="row">B · Hybrid + field rerank</th><td>0.9200</td><td>0.9068</td><td>0.9087</td><td>113/125</td><td>1.000</td></tr><tr><th scope="row">C · Intent routing</th><td>1.0000</td><td>1.0000</td><td>1.0000</td><td>125/125</td><td>1.152</td></tr><tr><th scope="row">D · Hybrid + intent</th><td>1.0000</td><td>1.0000</td><td>1.0000</td><td>125/125</td><td>1.152</td></tr></tbody></table></div><figure class="figure"><a href="assets/midterm/comparison_print.png" aria-label="Open full-size figure: Validation precision, recall, F1 and exact matches for configurations A through D"><img src="assets/midterm/comparison_print.png" alt="Validation precision, recall, F1 and exact matches for configurations A through D" loading="lazy"></a><figcaption>Figure 3. Saved comparison from the final report. Select the image to view it full size.</figcaption></figure><p>Improvement 1 alone increases F1 by 0.0080 and adds one exact match overall. Improvement 2 alone increases F1 by 0.0993 and resolves all 13 baseline failures on this validation set.</p>
+<div class="highlight"><p><strong>C and D tie.</strong> D was chosen using the documented tie-break after F1, precision, recall and exact matches. The combined system has no measured validation advantage over C; the two improvements are not claimed to be additive.</p></div>
+</section>
+
+<section class="section" id="section-6"><h2>6. Error Analysis</h2>
+<div class="table-scroll" role="region" aria-label="Macro F1 by validation question category" tabindex="0"><table><caption>Macro F1 by validation question category</caption><thead><tr><th scope="col">Category</th><th scope="col">n</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th></tr></thead><tbody><tr><th scope="row">Credit-card bills</th><td>25</td><td>1.0000</td><td>1.0000</td><td>1.0000</td><td>1.0000</td></tr><tr><th scope="row">Invoices</th><td>25</td><td>1.0000</td><td>1.0000</td><td>1.0000</td><td>1.0000</td></tr><tr><th scope="row">Store receipts</th><td>25</td><td>1.0000</td><td>1.0000</td><td>1.0000</td><td>1.0000</td></tr><tr><th scope="row">Bank statements</th><td>10</td><td>1.0000</td><td>1.0000</td><td>1.0000</td><td>1.0000</td></tr><tr><th scope="row">Utility bills</th><td>10</td><td>1.0000</td><td>1.0000</td><td>1.0000</td><td>1.0000</td></tr><tr><th scope="row">Pharmacy receipts</th><td>5</td><td>1.0000</td><td>1.0000</td><td>1.0000</td><td>1.0000</td></tr><tr><th scope="row">Policy</th><td>19</td><td>0.6316</td><td>0.6842</td><td>1.0000</td><td>1.0000</td></tr><tr><th scope="row">Multi-document aggregate</th><td>3</td><td>0.1939</td><td>0.1939</td><td>1.0000</td><td>1.0000</td></tr><tr><th scope="row">Global extreme</th><td>3</td><td>0.0000</td><td>0.0000</td><td>1.0000</td><td>1.0000</td></tr></tbody></table></div><figure class="figure"><a href="assets/midterm/per_category_print.png" aria-label="Open full-size figure: Per-category validation F1 showing gains on policy and dataset-level questions"><img src="assets/midterm/per_category_print.png" alt="Per-category validation F1 showing gains on policy and dataset-level questions" loading="lazy"></a><figcaption>Figure 4. Saved category comparison. Select the image to view it full size.</figcaption></figure><p>All four configurations retrieve the correct evidence for the 100 structured single-document questions. The baseline misses seven policy questions, three global extrema and three multi-document aggregates.</p>
+<p>Hybrid retrieval fixes q101 and q113 but regresses q117, leaving 12 imperfect predictions. Intent routing resolves the policy and dataset-level failures on validation. The remaining concern is generalization to unfamiliar phrasing and document templates.</p>
+</section>
+
+<section class="section" id="section-7"><h2>7. Local Web Application &amp; LLM Judge</h2>
+<p>The Streamlit application provides text and PNG/JPG/JPEG query inputs, editable OCR text, ranked document previews and expandable contents. Top-K options include 10 and 20. Adaptive <code>source_docs</code> are displayed separately, so an aggregate query can recommend 25 documents while the UI displays ten ranked cards.</p>
+<p>The saved OCR test used macOS Vision: the invoice identifier was preserved and the correct document ranked first, although a date was misread. A blank image produced an explicit OCR error. The implementation also supports a Tesseract executable.</p>
+<h3>Optional local judge</h3>
+<p>Ollama model <code>qwen3.5:4b-q4_K_M</code> checks evidence relevance and sufficiency only. It is disabled by default and called only after enabling the option and pressing the evaluation button. It does not generate answers or change <code>source_docs</code>.</p>
+<p>Each run considers at most three documents, with 2,200 characters per document, a 2,048-token context and a 120-token output limit. A saved one-document test returned “Acceptable: Yes” and took about 14 seconds on the local M1 / 8 GB machine.</p>
+<p>The archived Stage 3 suite passed <strong>28/28 checks</strong>, including text retrieval, Top-10/20 display, OCR, disabled-judge behavior, an actual local judge call and regression checks. The upload widget itself was not browser-automated; its OCR/retrieval functions were tested end to end.</p>
+<p>This portfolio is a static results page. To run the interactive application, follow the <a href="https://github.com/iwanttosleeeep/DL-portfolio/tree/main/code/midterm#data-and-setup">local setup guide</a>.</p>
+</section>
+
+<section class="section" id="section-8"><h2>8. Final Test Output &amp; Integrity Checks</h2>
+<div class="table-scroll" role="region" aria-label="Routing of the 116 unlabelled test questions" tabindex="0"><table><caption>Routing of the 116 unlabelled test questions</caption><thead><tr><th scope="col">Retrieval route</th><th scope="col">Questions</th></tr></thead><tbody><tr><th scope="row">Hybrid single-document</th><td>100</td></tr><tr><th scope="row">Policy intent</th><td>10</td></tr><tr><th scope="row">Global extreme</th><td>3</td></tr><tr><th scope="row">Aggregate sum</th><td>2</td></tr><tr><th scope="row">Filtered set</th><td>1</td></tr><tr><th scope="row">Total</th><td>116</td></tr></tbody></table></div><p>Configuration D generated 116 entries in the original question order. Of these, 113 return one source document, two return 25 documents and one returns three. Each entry has exactly <code>id</code>, <code>question</code>, <code>source_docs</code> and an empty <code>answer</code>.</p>
+<p>Saved checks verified unique IDs, exact question text and order, existing source filenames, no duplicate sources, non-empty evidence sets and 35/35 identifier consistency checks. An independent raw-document audit agreed with all six dataset-level predictions.</p>
+<p>The prediction SHA-256 was unchanged across the recorded Stage 3 regression checks. These checks establish output integrity; hidden test accuracy remains unknown. The public <a href="results/midterm/prediction_checks.json">check summary</a> records the counts and checksum.</p>
+</section>
+
+<section class="section" id="section-9"><h2>9. Reproducible Prompt &amp; Project Files</h2>
+<p>The final <strong>440-word</strong> prompt captures the baseline, hybrid weights, intent routing, validation-only selection, output schema, app behavior and verification steps. It describes the original exam setup and stays within the task's 500-word limit.</p>
+<details class="prompt"><summary>Read the final reproducible prompt (440 words)</summary><div class="prompt-text">Reproduce the STAT6207 Midterm RAG system on an M1 Mac with 8 GB RAM. Use existing `.venv`, `activate.sh`, local tools, and minimal dependencies. Preserve `New Folder With Items/`; create all outputs from scratch.
+
+Inputs: `New Folder With Items/documents/*.md`, `qa_pairs.json` (125 validation questions), `test_questions.json` (unlabeled), and `evaluate_retrieval_f1.py`. Load all Markdown, preserve filenames, and infer types from prefixes.
+
+1. Baseline: word TF-IDF 1–2 grams, sublinear TF, English stop words, `min_df=1`, cosine similarity; predict Top-1 and evaluate all validation questions with the official evaluator. Save predictions, metrics, failure analysis, plots under `output/stage1/`.
+
+2. Improvement 1: fuse normalized word TF-IDF, `char_wb` 3–5 gram TF-IDF, and BM25 (`k1=1.5`, `b=0.75`) at 0.45/0.40/0.15. Parse names, companies, invoice/account IDs, dates, amounts, payment methods, and bank transactions; rerank with exact bonuses for IDs, names, companies, dates, and type hints. No hardcoded question-to-document mappings.
+
+3. Improvement 2: route policy, global-extreme, aggregate-sum, and filtered-set questions. Use reusable policy concepts/synonyms; parse numeric fields for extrema/sums; return all category documents for sums and content matches for filters. Fall back to the best single document. Never use validation IDs or labels.
+
+4. Evaluate A baseline, B +Improvement 1, C +Improvement 2, D both on all validation questions with the official evaluator. Report macro P/R/F1, exact matches, per-category results, and plots. Select by validation only: highest F1, then precision, recall, exact matches; on a complete tie prefer D, C, B, A.
+
+5. After selection, generate `output/final/test_predictions.json` with this exact shape: `{&quot;questions&quot;:[{&quot;id&quot;:&quot;test-id&quot;,&quot;question&quot;:&quot;...&quot;,&quot;source_docs&quot;:[&quot;file.md&quot;],&quot;answer&quot;:&quot;&quot;}]}`. Preserve every ID, question text, and order; use original filenames; leave `answer` empty. Validate one entry per question, exact text, existing documents, no duplicates, non-empty `source_docs`, four fields. Never tune on test questions.
+
+6. Build a Streamlit app using the selected pipeline. Support text queries and PNG/JPG/JPEG uploads with local OCR (macOS Vision Swift helper, Tesseract fallback); show image and extracted text, allow corrections, report OCR failure. Offer Top-K including 10 and 20; show filename, score, preview, and expandable full content. Show adaptive `source_docs` separately from UI Top-K. Pin Streamlit 1.40.2 with protobuf 4.25.9.
+
+7. Add an optional local Ollama judge using `qwen3.5:4b-q4_K_M`. Keep it off by default; call only after enabling it and pressing &quot;Evaluate Retrieval with Local LLM&quot;. Send the query and at most three documents, truncate inputs, limit output tokens, and request only relevance/sufficiency plus a short justification, never an answer. Handle connection, model, timeout errors.
+
+8. Save code, metrics, figures, predictions, OCR/LLM modules, requirements, a README with the launch command, and smoke-test results. Verify by execution: text query, Top-10/20, rendered-image OCR, real Ollama judgment if available, no judge call when disabled, official validation F1, and identical prediction SHA-256 across two runs. Audit aggregate/extreme predictions against raw evidence without changing parameters.
+</div></details>
+<ul><li><a href="https://github.com/iwanttosleeeep/DL-portfolio/tree/main/code/midterm">Source code and local setup</a></li>
+<li><a href="results/midterm/comparison.csv">Validation comparison (CSV)</a> and <a href="results/midterm/validation_metrics.json">detailed aggregate metrics (JSON)</a></li>
+<li><a href="results/midterm/smoke_summary.json">Archived smoke-test summary</a></li>
+<li><a href="code/midterm/reproducible_prompt.md">Prompt</a> and <a href="code/midterm/prompt_design_explanation.md">design explanation</a></li></ul>
+<p>The source snapshot preserves the original implementation. Running it requires the course-provided data and local dependencies described in the setup guide. This page is based on the final report and saved exam results; no model or retrieval experiment was rerun for publication.</p>
+</section>
+
+<section class="section" id="section-10"><h2>10. Limitations &amp; Conclusion</h2>
+<ul><li>Perfect validation performance saturates this small set and does not establish hidden test performance.</li><li>Policy vocabulary and intent rules are finite; unseen paraphrases can fall back to lexical ranking.</li><li>Field parsing depends on document templates, and OCR can misread dates and punctuation.</li><li>The optional 4B judge adds latency and memory pressure and can vary between runs.</li><li>The archived checks cover app logic and OCR, but do not establish browser upload-widget coverage.</li></ul>
+<p>The strongest measured gain comes from matching retrieval behavior to question intent. Hybrid lexical scoring helps modestly on its own, while structured routing handles policy, extrema and multi-document evidence. The resulting system combines transparent retrieval with a local text/image interface and an optional evidence judge.</p>
+</section>
+<p class="back-link"><a href="index.html">← All coursework</a></p>
+</div></main>
+<footer>
+  <div class="container">
+    STAT6207 Applied Deep Learning &middot; Coursework Portfolio
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Prompt Design Explanation
+
+The final prompt was derived from the staged implementation rather than from the reports alone. I inspected the Stage 1/2 reports, final-prediction validator, Stage 3 app, OCR/judge modules, and saved smoke-test results. The prompt therefore encodes the key decisions: input paths, the four configurations, the validation-only selection rule, the final JSON schema, and executable verification checks.
+
+Stage 1 error analysis showed that the TF-IDF baseline was strong on the 100 structured single-document questions but weak on 13 questions. Seven were policy paraphrases, three required numerical extrema, and three required multi-document aggregate sets. Fixed Top-K retrieval was also harmful because most questions need exactly one document. Tokenization split dates and identifiers, weakening exact matching.
+
+Those findings motivated the two improvements. Hybrid retrieval added character n-grams, BM25, and field-aware reranking to preserve identifier/date evidence and improve lexical robustness. Intent routing directly handled policy concepts, numeric extrema, category sums, and filtered sets, avoiding fixed-k behavior. Both were evaluated separately and together because Improvement 1 produced a modest gain while Improvement 2 solved the structural failures; the prompt does not assume the combination is additive.
+
+Stage 3 supplied practical constraints. macOS Vision’s accurate mode hung on this host, so the prompt asks for a working local OCR path rather than a specific unavailable mode. Streamlit was pinned to avoid breaking the existing protobuf/TensorFlow environment. The judge must remain opt-in, document-limited, token-limited, and failure-tolerant.
+
+The prompt improves reproducibility by specifying algorithms, weights, selection order, validation, and end-to-end tests. It improves reliability by forbidding label leakage, hardcoded mappings, and test tuning. It improves resource efficiency by targeting the M1 environment, reusing local tools, and limiting LLM input and generation. Remaining risks are finite policy vocabulary, template-dependent field parsing, OCR misreads, hidden test labels, validation saturation, and judge variability.
