@@ -1,0 +1,801 @@
+brand,brand_display,class_name,detection_count,detection_share,images_with_class,image_prevalence
+bang-olufsen,Bang & Olufsen,person,29,0.432835820896,21,0.525
+bang-olufsen,Bang & Olufsen,bicycle,0,0,0,0
+bang-olufsen,Bang & Olufsen,car,2,0.0298507462687,2,0.05
+bang-olufsen,Bang & Olufsen,motorcycle,0,0,0,0
+bang-olufsen,Bang & Olufsen,airplane,0,0,0,0
+bang-olufsen,Bang & Olufsen,bus,0,0,0,0
+bang-olufsen,Bang & Olufsen,train,0,0,0,0
+bang-olufsen,Bang & Olufsen,truck,0,0,0,0
+bang-olufsen,Bang & Olufsen,boat,0,0,0,0
+bang-olufsen,Bang & Olufsen,traffic light,0,0,0,0
+bang-olufsen,Bang & Olufsen,fire hydrant,0,0,0,0
+bang-olufsen,Bang & Olufsen,stop sign,0,0,0,0
+bang-olufsen,Bang & Olufsen,parking meter,0,0,0,0
+bang-olufsen,Bang & Olufsen,bench,0,0,0,0
+bang-olufsen,Bang & Olufsen,bird,0,0,0,0
+bang-olufsen,Bang & Olufsen,cat,0,0,0,0
+bang-olufsen,Bang & Olufsen,dog,0,0,0,0
+bang-olufsen,Bang & Olufsen,horse,0,0,0,0
+bang-olufsen,Bang & Olufsen,sheep,0,0,0,0
+bang-olufsen,Bang & Olufsen,cow,0,0,0,0
+bang-olufsen,Bang & Olufsen,elephant,0,0,0,0
+bang-olufsen,Bang & Olufsen,bear,0,0,0,0
+bang-olufsen,Bang & Olufsen,zebra,0,0,0,0
+bang-olufsen,Bang & Olufsen,giraffe,0,0,0,0
+bang-olufsen,Bang & Olufsen,backpack,0,0,0,0
+bang-olufsen,Bang & Olufsen,umbrella,0,0,0,0
+bang-olufsen,Bang & Olufsen,handbag,0,0,0,0
+bang-olufsen,Bang & Olufsen,tie,0,0,0,0
+bang-olufsen,Bang & Olufsen,suitcase,1,0.0149253731343,1,0.025
+bang-olufsen,Bang & Olufsen,frisbee,0,0,0,0
+bang-olufsen,Bang & Olufsen,skis,0,0,0,0
+bang-olufsen,Bang & Olufsen,snowboard,0,0,0,0
+bang-olufsen,Bang & Olufsen,sports ball,0,0,0,0
+bang-olufsen,Bang & Olufsen,kite,0,0,0,0
+bang-olufsen,Bang & Olufsen,baseball bat,0,0,0,0
+bang-olufsen,Bang & Olufsen,baseball glove,0,0,0,0
+bang-olufsen,Bang & Olufsen,skateboard,0,0,0,0
+bang-olufsen,Bang & Olufsen,surfboard,0,0,0,0
+bang-olufsen,Bang & Olufsen,tennis racket,0,0,0,0
+bang-olufsen,Bang & Olufsen,bottle,1,0.0149253731343,1,0.025
+bang-olufsen,Bang & Olufsen,wine glass,0,0,0,0
+bang-olufsen,Bang & Olufsen,cup,2,0.0298507462687,2,0.05
+bang-olufsen,Bang & Olufsen,fork,0,0,0,0
+bang-olufsen,Bang & Olufsen,knife,0,0,0,0
+bang-olufsen,Bang & Olufsen,spoon,0,0,0,0
+bang-olufsen,Bang & Olufsen,bowl,0,0,0,0
+bang-olufsen,Bang & Olufsen,banana,0,0,0,0
+bang-olufsen,Bang & Olufsen,apple,0,0,0,0
+bang-olufsen,Bang & Olufsen,sandwich,0,0,0,0
+bang-olufsen,Bang & Olufsen,orange,2,0.0298507462687,2,0.05
+bang-olufsen,Bang & Olufsen,broccoli,0,0,0,0
+bang-olufsen,Bang & Olufsen,carrot,0,0,0,0
+bang-olufsen,Bang & Olufsen,hot dog,0,0,0,0
+bang-olufsen,Bang & Olufsen,pizza,0,0,0,0
+bang-olufsen,Bang & Olufsen,donut,0,0,0,0
+bang-olufsen,Bang & Olufsen,cake,0,0,0,0
+bang-olufsen,Bang & Olufsen,chair,6,0.089552238806,6,0.15
+bang-olufsen,Bang & Olufsen,couch,1,0.0149253731343,1,0.025
+bang-olufsen,Bang & Olufsen,potted plant,3,0.044776119403,3,0.075
+bang-olufsen,Bang & Olufsen,bed,1,0.0149253731343,1,0.025
+bang-olufsen,Bang & Olufsen,dining table,2,0.0298507462687,2,0.05
+bang-olufsen,Bang & Olufsen,toilet,1,0.0149253731343,1,0.025
+bang-olufsen,Bang & Olufsen,tv,2,0.0298507462687,2,0.05
+bang-olufsen,Bang & Olufsen,laptop,1,0.0149253731343,1,0.025
+bang-olufsen,Bang & Olufsen,mouse,2,0.0298507462687,2,0.05
+bang-olufsen,Bang & Olufsen,remote,0,0,0,0
+bang-olufsen,Bang & Olufsen,keyboard,0,0,0,0
+bang-olufsen,Bang & Olufsen,cell phone,0,0,0,0
+bang-olufsen,Bang & Olufsen,microwave,0,0,0,0
+bang-olufsen,Bang & Olufsen,oven,0,0,0,0
+bang-olufsen,Bang & Olufsen,toaster,0,0,0,0
+bang-olufsen,Bang & Olufsen,sink,0,0,0,0
+bang-olufsen,Bang & Olufsen,refrigerator,0,0,0,0
+bang-olufsen,Bang & Olufsen,book,4,0.0597014925373,3,0.075
+bang-olufsen,Bang & Olufsen,clock,0,0,0,0
+bang-olufsen,Bang & Olufsen,vase,5,0.0746268656716,5,0.125
+bang-olufsen,Bang & Olufsen,scissors,2,0.0298507462687,2,0.05
+bang-olufsen,Bang & Olufsen,teddy bear,0,0,0,0
+bang-olufsen,Bang & Olufsen,hair drier,0,0,0,0
+bang-olufsen,Bang & Olufsen,toothbrush,0,0,0,0
+fortnum-mason,Fortnum & Mason,person,28,0.151351351351,7,0.175
+fortnum-mason,Fortnum & Mason,bicycle,0,0,0,0
+fortnum-mason,Fortnum & Mason,car,0,0,0,0
+fortnum-mason,Fortnum & Mason,motorcycle,0,0,0,0
+fortnum-mason,Fortnum & Mason,airplane,0,0,0,0
+fortnum-mason,Fortnum & Mason,bus,0,0,0,0
+fortnum-mason,Fortnum & Mason,train,0,0,0,0
+fortnum-mason,Fortnum & Mason,truck,0,0,0,0
+fortnum-mason,Fortnum & Mason,boat,0,0,0,0
+fortnum-mason,Fortnum & Mason,traffic light,0,0,0,0
+fortnum-mason,Fortnum & Mason,fire hydrant,0,0,0,0
+fortnum-mason,Fortnum & Mason,stop sign,0,0,0,0
+fortnum-mason,Fortnum & Mason,parking meter,0,0,0,0
+fortnum-mason,Fortnum & Mason,bench,1,0.00540540540541,1,0.025
+fortnum-mason,Fortnum & Mason,bird,0,0,0,0
+fortnum-mason,Fortnum & Mason,cat,1,0.00540540540541,1,0.025
+fortnum-mason,Fortnum & Mason,dog,0,0,0,0
+fortnum-mason,Fortnum & Mason,horse,0,0,0,0
+fortnum-mason,Fortnum & Mason,sheep,0,0,0,0
+fortnum-mason,Fortnum & Mason,cow,0,0,0,0
+fortnum-mason,Fortnum & Mason,elephant,0,0,0,0
+fortnum-mason,Fortnum & Mason,bear,0,0,0,0
+fortnum-mason,Fortnum & Mason,zebra,0,0,0,0
+fortnum-mason,Fortnum & Mason,giraffe,0,0,0,0
+fortnum-mason,Fortnum & Mason,backpack,0,0,0,0
+fortnum-mason,Fortnum & Mason,umbrella,0,0,0,0
+fortnum-mason,Fortnum & Mason,handbag,1,0.00540540540541,1,0.025
+fortnum-mason,Fortnum & Mason,tie,0,0,0,0
+fortnum-mason,Fortnum & Mason,suitcase,1,0.00540540540541,1,0.025
+fortnum-mason,Fortnum & Mason,frisbee,0,0,0,0
+fortnum-mason,Fortnum & Mason,skis,0,0,0,0
+fortnum-mason,Fortnum & Mason,snowboard,0,0,0,0
+fortnum-mason,Fortnum & Mason,sports ball,0,0,0,0
+fortnum-mason,Fortnum & Mason,kite,1,0.00540540540541,1,0.025
+fortnum-mason,Fortnum & Mason,baseball bat,0,0,0,0
+fortnum-mason,Fortnum & Mason,baseball glove,0,0,0,0
+fortnum-mason,Fortnum & Mason,skateboard,0,0,0,0
+fortnum-mason,Fortnum & Mason,surfboard,0,0,0,0
+fortnum-mason,Fortnum & Mason,tennis racket,0,0,0,0
+fortnum-mason,Fortnum & Mason,bottle,20,0.108108108108,12,0.3
+fortnum-mason,Fortnum & Mason,wine glass,5,0.027027027027,2,0.05
+fortnum-mason,Fortnum & Mason,cup,28,0.151351351351,14,0.35
+fortnum-mason,Fortnum & Mason,fork,3,0.0162162162162,2,0.05
+fortnum-mason,Fortnum & Mason,knife,2,0.0108108108108,2,0.05
+fortnum-mason,Fortnum & Mason,spoon,4,0.0216216216216,4,0.1
+fortnum-mason,Fortnum & Mason,bowl,17,0.0918918918919,11,0.275
+fortnum-mason,Fortnum & Mason,banana,0,0,0,0
+fortnum-mason,Fortnum & Mason,apple,1,0.00540540540541,1,0.025
+fortnum-mason,Fortnum & Mason,sandwich,2,0.0108108108108,2,0.05
+fortnum-mason,Fortnum & Mason,orange,1,0.00540540540541,1,0.025
+fortnum-mason,Fortnum & Mason,broccoli,2,0.0108108108108,1,0.025
+fortnum-mason,Fortnum & Mason,carrot,0,0,0,0
+fortnum-mason,Fortnum & Mason,hot dog,1,0.00540540540541,1,0.025
+fortnum-mason,Fortnum & Mason,pizza,0,0,0,0
+fortnum-mason,Fortnum & Mason,donut,2,0.0108108108108,2,0.05
+fortnum-mason,Fortnum & Mason,cake,20,0.108108108108,7,0.175
+fortnum-mason,Fortnum & Mason,chair,11,0.0594594594595,5,0.125
+fortnum-mason,Fortnum & Mason,couch,0,0,0,0
+fortnum-mason,Fortnum & Mason,potted plant,2,0.0108108108108,2,0.05
+fortnum-mason,Fortnum & Mason,bed,0,0,0,0
+fortnum-mason,Fortnum & Mason,dining table,14,0.0756756756757,14,0.35
+fortnum-mason,Fortnum & Mason,toilet,0,0,0,0
+fortnum-mason,Fortnum & Mason,tv,0,0,0,0
+fortnum-mason,Fortnum & Mason,laptop,0,0,0,0
+fortnum-mason,Fortnum & Mason,mouse,0,0,0,0
+fortnum-mason,Fortnum & Mason,remote,0,0,0,0
+fortnum-mason,Fortnum & Mason,keyboard,0,0,0,0
+fortnum-mason,Fortnum & Mason,cell phone,1,0.00540540540541,1,0.025
+fortnum-mason,Fortnum & Mason,microwave,0,0,0,0
+fortnum-mason,Fortnum & Mason,oven,0,0,0,0
+fortnum-mason,Fortnum & Mason,toaster,0,0,0,0
+fortnum-mason,Fortnum & Mason,sink,0,0,0,0
+fortnum-mason,Fortnum & Mason,refrigerator,1,0.00540540540541,1,0.025
+fortnum-mason,Fortnum & Mason,book,5,0.027027027027,4,0.1
+fortnum-mason,Fortnum & Mason,clock,4,0.0216216216216,2,0.05
+fortnum-mason,Fortnum & Mason,vase,6,0.0324324324324,6,0.15
+fortnum-mason,Fortnum & Mason,scissors,0,0,0,0
+fortnum-mason,Fortnum & Mason,teddy bear,0,0,0,0
+fortnum-mason,Fortnum & Mason,hair drier,0,0,0,0
+fortnum-mason,Fortnum & Mason,toothbrush,0,0,0,0
+herman-miller,Herman Miller,person,9,0.0459183673469,9,0.225
+herman-miller,Herman Miller,bicycle,1,0.00510204081633,1,0.025
+herman-miller,Herman Miller,car,0,0,0,0
+herman-miller,Herman Miller,motorcycle,0,0,0,0
+herman-miller,Herman Miller,airplane,1,0.00510204081633,1,0.025
+herman-miller,Herman Miller,bus,0,0,0,0
+herman-miller,Herman Miller,train,0,0,0,0
+herman-miller,Herman Miller,truck,0,0,0,0
+herman-miller,Herman Miller,boat,0,0,0,0
+herman-miller,Herman Miller,traffic light,1,0.00510204081633,1,0.025
+herman-miller,Herman Miller,fire hydrant,0,0,0,0
+herman-miller,Herman Miller,stop sign,0,0,0,0
+herman-miller,Herman Miller,parking meter,0,0,0,0
+herman-miller,Herman Miller,bench,1,0.00510204081633,1,0.025
+herman-miller,Herman Miller,bird,0,0,0,0
+herman-miller,Herman Miller,cat,3,0.015306122449,3,0.075
+herman-miller,Herman Miller,dog,0,0,0,0
+herman-miller,Herman Miller,horse,0,0,0,0
+herman-miller,Herman Miller,sheep,0,0,0,0
+herman-miller,Herman Miller,cow,0,0,0,0
+herman-miller,Herman Miller,elephant,0,0,0,0
+herman-miller,Herman Miller,bear,0,0,0,0
+herman-miller,Herman Miller,zebra,0,0,0,0
+herman-miller,Herman Miller,giraffe,0,0,0,0
+herman-miller,Herman Miller,backpack,0,0,0,0
+herman-miller,Herman Miller,umbrella,0,0,0,0
+herman-miller,Herman Miller,handbag,0,0,0,0
+herman-miller,Herman Miller,tie,0,0,0,0
+herman-miller,Herman Miller,suitcase,0,0,0,0
+herman-miller,Herman Miller,frisbee,0,0,0,0
+herman-miller,Herman Miller,skis,0,0,0,0
+herman-miller,Herman Miller,snowboard,0,0,0,0
+herman-miller,Herman Miller,sports ball,0,0,0,0
+herman-miller,Herman Miller,kite,0,0,0,0
+herman-miller,Herman Miller,baseball bat,0,0,0,0
+herman-miller,Herman Miller,baseball glove,0,0,0,0
+herman-miller,Herman Miller,skateboard,0,0,0,0
+herman-miller,Herman Miller,surfboard,0,0,0,0
+herman-miller,Herman Miller,tennis racket,0,0,0,0
+herman-miller,Herman Miller,bottle,4,0.0204081632653,4,0.1
+herman-miller,Herman Miller,wine glass,0,0,0,0
+herman-miller,Herman Miller,cup,7,0.0357142857143,6,0.15
+herman-miller,Herman Miller,fork,0,0,0,0
+herman-miller,Herman Miller,knife,0,0,0,0
+herman-miller,Herman Miller,spoon,0,0,0,0
+herman-miller,Herman Miller,bowl,2,0.0102040816327,2,0.05
+herman-miller,Herman Miller,banana,0,0,0,0
+herman-miller,Herman Miller,apple,1,0.00510204081633,1,0.025
+herman-miller,Herman Miller,sandwich,0,0,0,0
+herman-miller,Herman Miller,orange,6,0.030612244898,1,0.025
+herman-miller,Herman Miller,broccoli,0,0,0,0
+herman-miller,Herman Miller,carrot,0,0,0,0
+herman-miller,Herman Miller,hot dog,0,0,0,0
+herman-miller,Herman Miller,pizza,1,0.00510204081633,1,0.025
+herman-miller,Herman Miller,donut,0,0,0,0
+herman-miller,Herman Miller,cake,0,0,0,0
+herman-miller,Herman Miller,chair,75,0.382653061224,31,0.775
+herman-miller,Herman Miller,couch,10,0.0510204081633,10,0.25
+herman-miller,Herman Miller,potted plant,14,0.0714285714286,10,0.25
+herman-miller,Herman Miller,bed,1,0.00510204081633,1,0.025
+herman-miller,Herman Miller,dining table,12,0.0612244897959,10,0.25
+herman-miller,Herman Miller,toilet,0,0,0,0
+herman-miller,Herman Miller,tv,13,0.0663265306122,10,0.25
+herman-miller,Herman Miller,laptop,2,0.0102040816327,2,0.05
+herman-miller,Herman Miller,mouse,1,0.00510204081633,1,0.025
+herman-miller,Herman Miller,remote,0,0,0,0
+herman-miller,Herman Miller,keyboard,2,0.0102040816327,2,0.05
+herman-miller,Herman Miller,cell phone,2,0.0102040816327,2,0.05
+herman-miller,Herman Miller,microwave,1,0.00510204081633,1,0.025
+herman-miller,Herman Miller,oven,2,0.0102040816327,2,0.05
+herman-miller,Herman Miller,toaster,0,0,0,0
+herman-miller,Herman Miller,sink,0,0,0,0
+herman-miller,Herman Miller,refrigerator,1,0.00510204081633,1,0.025
+herman-miller,Herman Miller,book,19,0.0969387755102,8,0.2
+herman-miller,Herman Miller,clock,0,0,0,0
+herman-miller,Herman Miller,vase,4,0.0204081632653,4,0.1
+herman-miller,Herman Miller,scissors,0,0,0,0
+herman-miller,Herman Miller,teddy bear,0,0,0,0
+herman-miller,Herman Miller,hair drier,0,0,0,0
+herman-miller,Herman Miller,toothbrush,0,0,0,0
+jellycat,Jellycat,person,3,0.0188679245283,3,0.075
+jellycat,Jellycat,bicycle,0,0,0,0
+jellycat,Jellycat,car,0,0,0,0
+jellycat,Jellycat,motorcycle,0,0,0,0
+jellycat,Jellycat,airplane,0,0,0,0
+jellycat,Jellycat,bus,0,0,0,0
+jellycat,Jellycat,train,0,0,0,0
+jellycat,Jellycat,truck,0,0,0,0
+jellycat,Jellycat,boat,0,0,0,0
+jellycat,Jellycat,traffic light,1,0.0062893081761,1,0.025
+jellycat,Jellycat,fire hydrant,0,0,0,0
+jellycat,Jellycat,stop sign,0,0,0,0
+jellycat,Jellycat,parking meter,0,0,0,0
+jellycat,Jellycat,bench,2,0.0125786163522,2,0.05
+jellycat,Jellycat,bird,0,0,0,0
+jellycat,Jellycat,cat,0,0,0,0
+jellycat,Jellycat,dog,1,0.0062893081761,1,0.025
+jellycat,Jellycat,horse,0,0,0,0
+jellycat,Jellycat,sheep,0,0,0,0
+jellycat,Jellycat,cow,0,0,0,0
+jellycat,Jellycat,elephant,0,0,0,0
+jellycat,Jellycat,bear,2,0.0125786163522,2,0.05
+jellycat,Jellycat,zebra,0,0,0,0
+jellycat,Jellycat,giraffe,0,0,0,0
+jellycat,Jellycat,backpack,0,0,0,0
+jellycat,Jellycat,umbrella,0,0,0,0
+jellycat,Jellycat,handbag,0,0,0,0
+jellycat,Jellycat,tie,2,0.0125786163522,2,0.05
+jellycat,Jellycat,suitcase,0,0,0,0
+jellycat,Jellycat,frisbee,0,0,0,0
+jellycat,Jellycat,skis,0,0,0,0
+jellycat,Jellycat,snowboard,0,0,0,0
+jellycat,Jellycat,sports ball,0,0,0,0
+jellycat,Jellycat,kite,0,0,0,0
+jellycat,Jellycat,baseball bat,0,0,0,0
+jellycat,Jellycat,baseball glove,0,0,0,0
+jellycat,Jellycat,skateboard,0,0,0,0
+jellycat,Jellycat,surfboard,0,0,0,0
+jellycat,Jellycat,tennis racket,0,0,0,0
+jellycat,Jellycat,bottle,1,0.0062893081761,1,0.025
+jellycat,Jellycat,wine glass,0,0,0,0
+jellycat,Jellycat,cup,5,0.0314465408805,4,0.1
+jellycat,Jellycat,fork,0,0,0,0
+jellycat,Jellycat,knife,0,0,0,0
+jellycat,Jellycat,spoon,2,0.0125786163522,1,0.025
+jellycat,Jellycat,bowl,3,0.0188679245283,2,0.05
+jellycat,Jellycat,banana,1,0.0062893081761,1,0.025
+jellycat,Jellycat,apple,0,0,0,0
+jellycat,Jellycat,sandwich,1,0.0062893081761,1,0.025
+jellycat,Jellycat,orange,0,0,0,0
+jellycat,Jellycat,broccoli,0,0,0,0
+jellycat,Jellycat,carrot,1,0.0062893081761,1,0.025
+jellycat,Jellycat,hot dog,0,0,0,0
+jellycat,Jellycat,pizza,0,0,0,0
+jellycat,Jellycat,donut,6,0.0377358490566,1,0.025
+jellycat,Jellycat,cake,3,0.0188679245283,2,0.05
+jellycat,Jellycat,chair,0,0,0,0
+jellycat,Jellycat,couch,1,0.0062893081761,1,0.025
+jellycat,Jellycat,potted plant,2,0.0125786163522,1,0.025
+jellycat,Jellycat,bed,0,0,0,0
+jellycat,Jellycat,dining table,4,0.0251572327044,4,0.1
+jellycat,Jellycat,toilet,0,0,0,0
+jellycat,Jellycat,tv,0,0,0,0
+jellycat,Jellycat,laptop,1,0.0062893081761,1,0.025
+jellycat,Jellycat,mouse,0,0,0,0
+jellycat,Jellycat,remote,0,0,0,0
+jellycat,Jellycat,keyboard,0,0,0,0
+jellycat,Jellycat,cell phone,0,0,0,0
+jellycat,Jellycat,microwave,0,0,0,0
+jellycat,Jellycat,oven,0,0,0,0
+jellycat,Jellycat,toaster,0,0,0,0
+jellycat,Jellycat,sink,0,0,0,0
+jellycat,Jellycat,refrigerator,0,0,0,0
+jellycat,Jellycat,book,0,0,0,0
+jellycat,Jellycat,clock,0,0,0,0
+jellycat,Jellycat,vase,2,0.0125786163522,1,0.025
+jellycat,Jellycat,scissors,0,0,0,0
+jellycat,Jellycat,teddy bear,115,0.723270440252,33,0.825
+jellycat,Jellycat,hair drier,0,0,0,0
+jellycat,Jellycat,toothbrush,0,0,0,0
+jo-malone-london,Jo Malone London,person,14,0.162790697674,12,0.3
+jo-malone-london,Jo Malone London,bicycle,0,0,0,0
+jo-malone-london,Jo Malone London,car,3,0.0348837209302,1,0.025
+jo-malone-london,Jo Malone London,motorcycle,0,0,0,0
+jo-malone-london,Jo Malone London,airplane,0,0,0,0
+jo-malone-london,Jo Malone London,bus,0,0,0,0
+jo-malone-london,Jo Malone London,train,0,0,0,0
+jo-malone-london,Jo Malone London,truck,1,0.0116279069767,1,0.025
+jo-malone-london,Jo Malone London,boat,0,0,0,0
+jo-malone-london,Jo Malone London,traffic light,0,0,0,0
+jo-malone-london,Jo Malone London,fire hydrant,0,0,0,0
+jo-malone-london,Jo Malone London,stop sign,0,0,0,0
+jo-malone-london,Jo Malone London,parking meter,0,0,0,0
+jo-malone-london,Jo Malone London,bench,1,0.0116279069767,1,0.025
+jo-malone-london,Jo Malone London,bird,0,0,0,0
+jo-malone-london,Jo Malone London,cat,0,0,0,0
+jo-malone-london,Jo Malone London,dog,0,0,0,0
+jo-malone-london,Jo Malone London,horse,0,0,0,0
+jo-malone-london,Jo Malone London,sheep,0,0,0,0
+jo-malone-london,Jo Malone London,cow,0,0,0,0
+jo-malone-london,Jo Malone London,elephant,0,0,0,0
+jo-malone-london,Jo Malone London,bear,0,0,0,0
+jo-malone-london,Jo Malone London,zebra,0,0,0,0
+jo-malone-london,Jo Malone London,giraffe,0,0,0,0
+jo-malone-london,Jo Malone London,backpack,0,0,0,0
+jo-malone-london,Jo Malone London,umbrella,0,0,0,0
+jo-malone-london,Jo Malone London,handbag,0,0,0,0
+jo-malone-london,Jo Malone London,tie,0,0,0,0
+jo-malone-london,Jo Malone London,suitcase,0,0,0,0
+jo-malone-london,Jo Malone London,frisbee,2,0.0232558139535,1,0.025
+jo-malone-london,Jo Malone London,skis,0,0,0,0
+jo-malone-london,Jo Malone London,snowboard,0,0,0,0
+jo-malone-london,Jo Malone London,sports ball,0,0,0,0
+jo-malone-london,Jo Malone London,kite,0,0,0,0
+jo-malone-london,Jo Malone London,baseball bat,0,0,0,0
+jo-malone-london,Jo Malone London,baseball glove,0,0,0,0
+jo-malone-london,Jo Malone London,skateboard,0,0,0,0
+jo-malone-london,Jo Malone London,surfboard,0,0,0,0
+jo-malone-london,Jo Malone London,tennis racket,0,0,0,0
+jo-malone-london,Jo Malone London,bottle,16,0.186046511628,10,0.25
+jo-malone-london,Jo Malone London,wine glass,0,0,0,0
+jo-malone-london,Jo Malone London,cup,13,0.151162790698,10,0.25
+jo-malone-london,Jo Malone London,fork,0,0,0,0
+jo-malone-london,Jo Malone London,knife,0,0,0,0
+jo-malone-london,Jo Malone London,spoon,0,0,0,0
+jo-malone-london,Jo Malone London,bowl,2,0.0232558139535,2,0.05
+jo-malone-london,Jo Malone London,banana,0,0,0,0
+jo-malone-london,Jo Malone London,apple,3,0.0348837209302,2,0.05
+jo-malone-london,Jo Malone London,sandwich,0,0,0,0
+jo-malone-london,Jo Malone London,orange,0,0,0,0
+jo-malone-london,Jo Malone London,broccoli,0,0,0,0
+jo-malone-london,Jo Malone London,carrot,0,0,0,0
+jo-malone-london,Jo Malone London,hot dog,0,0,0,0
+jo-malone-london,Jo Malone London,pizza,0,0,0,0
+jo-malone-london,Jo Malone London,donut,0,0,0,0
+jo-malone-london,Jo Malone London,cake,0,0,0,0
+jo-malone-london,Jo Malone London,chair,3,0.0348837209302,2,0.05
+jo-malone-london,Jo Malone London,couch,0,0,0,0
+jo-malone-london,Jo Malone London,potted plant,2,0.0232558139535,1,0.025
+jo-malone-london,Jo Malone London,bed,0,0,0,0
+jo-malone-london,Jo Malone London,dining table,2,0.0232558139535,2,0.05
+jo-malone-london,Jo Malone London,toilet,0,0,0,0
+jo-malone-london,Jo Malone London,tv,1,0.0116279069767,1,0.025
+jo-malone-london,Jo Malone London,laptop,0,0,0,0
+jo-malone-london,Jo Malone London,mouse,0,0,0,0
+jo-malone-london,Jo Malone London,remote,0,0,0,0
+jo-malone-london,Jo Malone London,keyboard,1,0.0116279069767,1,0.025
+jo-malone-london,Jo Malone London,cell phone,7,0.0813953488372,7,0.175
+jo-malone-london,Jo Malone London,microwave,0,0,0,0
+jo-malone-london,Jo Malone London,oven,0,0,0,0
+jo-malone-london,Jo Malone London,toaster,0,0,0,0
+jo-malone-london,Jo Malone London,sink,0,0,0,0
+jo-malone-london,Jo Malone London,refrigerator,1,0.0116279069767,1,0.025
+jo-malone-london,Jo Malone London,book,3,0.0348837209302,2,0.05
+jo-malone-london,Jo Malone London,clock,1,0.0116279069767,1,0.025
+jo-malone-london,Jo Malone London,vase,7,0.0813953488372,5,0.125
+jo-malone-london,Jo Malone London,scissors,0,0,0,0
+jo-malone-london,Jo Malone London,teddy bear,3,0.0348837209302,2,0.05
+jo-malone-london,Jo Malone London,hair drier,0,0,0,0
+jo-malone-london,Jo Malone London,toothbrush,0,0,0,0
+kodak,Kodak,person,15,0.194805194805,12,0.3
+kodak,Kodak,bicycle,0,0,0,0
+kodak,Kodak,car,0,0,0,0
+kodak,Kodak,motorcycle,0,0,0,0
+kodak,Kodak,airplane,0,0,0,0
+kodak,Kodak,bus,0,0,0,0
+kodak,Kodak,train,0,0,0,0
+kodak,Kodak,truck,1,0.012987012987,1,0.025
+kodak,Kodak,boat,1,0.012987012987,1,0.025
+kodak,Kodak,traffic light,1,0.012987012987,1,0.025
+kodak,Kodak,fire hydrant,0,0,0,0
+kodak,Kodak,stop sign,0,0,0,0
+kodak,Kodak,parking meter,0,0,0,0
+kodak,Kodak,bench,0,0,0,0
+kodak,Kodak,bird,0,0,0,0
+kodak,Kodak,cat,0,0,0,0
+kodak,Kodak,dog,0,0,0,0
+kodak,Kodak,horse,0,0,0,0
+kodak,Kodak,sheep,0,0,0,0
+kodak,Kodak,cow,0,0,0,0
+kodak,Kodak,elephant,0,0,0,0
+kodak,Kodak,bear,0,0,0,0
+kodak,Kodak,zebra,0,0,0,0
+kodak,Kodak,giraffe,0,0,0,0
+kodak,Kodak,backpack,0,0,0,0
+kodak,Kodak,umbrella,1,0.012987012987,1,0.025
+kodak,Kodak,handbag,0,0,0,0
+kodak,Kodak,tie,1,0.012987012987,1,0.025
+kodak,Kodak,suitcase,5,0.0649350649351,2,0.05
+kodak,Kodak,frisbee,0,0,0,0
+kodak,Kodak,skis,0,0,0,0
+kodak,Kodak,snowboard,0,0,0,0
+kodak,Kodak,sports ball,0,0,0,0
+kodak,Kodak,kite,1,0.012987012987,1,0.025
+kodak,Kodak,baseball bat,0,0,0,0
+kodak,Kodak,baseball glove,0,0,0,0
+kodak,Kodak,skateboard,0,0,0,0
+kodak,Kodak,surfboard,0,0,0,0
+kodak,Kodak,tennis racket,0,0,0,0
+kodak,Kodak,bottle,1,0.012987012987,1,0.025
+kodak,Kodak,wine glass,0,0,0,0
+kodak,Kodak,cup,1,0.012987012987,1,0.025
+kodak,Kodak,fork,0,0,0,0
+kodak,Kodak,knife,0,0,0,0
+kodak,Kodak,spoon,0,0,0,0
+kodak,Kodak,bowl,0,0,0,0
+kodak,Kodak,banana,0,0,0,0
+kodak,Kodak,apple,0,0,0,0
+kodak,Kodak,sandwich,0,0,0,0
+kodak,Kodak,orange,0,0,0,0
+kodak,Kodak,broccoli,0,0,0,0
+kodak,Kodak,carrot,0,0,0,0
+kodak,Kodak,hot dog,0,0,0,0
+kodak,Kodak,pizza,0,0,0,0
+kodak,Kodak,donut,0,0,0,0
+kodak,Kodak,cake,0,0,0,0
+kodak,Kodak,chair,4,0.0519480519481,2,0.05
+kodak,Kodak,couch,1,0.012987012987,1,0.025
+kodak,Kodak,potted plant,0,0,0,0
+kodak,Kodak,bed,1,0.012987012987,1,0.025
+kodak,Kodak,dining table,0,0,0,0
+kodak,Kodak,toilet,0,0,0,0
+kodak,Kodak,tv,0,0,0,0
+kodak,Kodak,laptop,0,0,0,0
+kodak,Kodak,mouse,0,0,0,0
+kodak,Kodak,remote,4,0.0519480519481,3,0.075
+kodak,Kodak,keyboard,0,0,0,0
+kodak,Kodak,cell phone,31,0.402597402597,15,0.375
+kodak,Kodak,microwave,0,0,0,0
+kodak,Kodak,oven,0,0,0,0
+kodak,Kodak,toaster,0,0,0,0
+kodak,Kodak,sink,0,0,0,0
+kodak,Kodak,refrigerator,0,0,0,0
+kodak,Kodak,book,7,0.0909090909091,5,0.125
+kodak,Kodak,clock,0,0,0,0
+kodak,Kodak,vase,0,0,0,0
+kodak,Kodak,scissors,0,0,0,0
+kodak,Kodak,teddy bear,1,0.012987012987,1,0.025
+kodak,Kodak,hair drier,0,0,0,0
+kodak,Kodak,toothbrush,0,0,0,0
+lego,LEGO,person,60,0.44776119403,20,0.5
+lego,LEGO,bicycle,0,0,0,0
+lego,LEGO,car,6,0.044776119403,4,0.1
+lego,LEGO,motorcycle,2,0.0149253731343,2,0.05
+lego,LEGO,airplane,0,0,0,0
+lego,LEGO,bus,1,0.00746268656716,1,0.025
+lego,LEGO,train,0,0,0,0
+lego,LEGO,truck,0,0,0,0
+lego,LEGO,boat,0,0,0,0
+lego,LEGO,traffic light,0,0,0,0
+lego,LEGO,fire hydrant,1,0.00746268656716,1,0.025
+lego,LEGO,stop sign,0,0,0,0
+lego,LEGO,parking meter,0,0,0,0
+lego,LEGO,bench,0,0,0,0
+lego,LEGO,bird,0,0,0,0
+lego,LEGO,cat,0,0,0,0
+lego,LEGO,dog,0,0,0,0
+lego,LEGO,horse,0,0,0,0
+lego,LEGO,sheep,0,0,0,0
+lego,LEGO,cow,0,0,0,0
+lego,LEGO,elephant,0,0,0,0
+lego,LEGO,bear,0,0,0,0
+lego,LEGO,zebra,0,0,0,0
+lego,LEGO,giraffe,0,0,0,0
+lego,LEGO,backpack,0,0,0,0
+lego,LEGO,umbrella,6,0.044776119403,1,0.025
+lego,LEGO,handbag,0,0,0,0
+lego,LEGO,tie,0,0,0,0
+lego,LEGO,suitcase,0,0,0,0
+lego,LEGO,frisbee,0,0,0,0
+lego,LEGO,skis,0,0,0,0
+lego,LEGO,snowboard,0,0,0,0
+lego,LEGO,sports ball,1,0.00746268656716,1,0.025
+lego,LEGO,kite,1,0.00746268656716,1,0.025
+lego,LEGO,baseball bat,0,0,0,0
+lego,LEGO,baseball glove,0,0,0,0
+lego,LEGO,skateboard,1,0.00746268656716,1,0.025
+lego,LEGO,surfboard,0,0,0,0
+lego,LEGO,tennis racket,0,0,0,0
+lego,LEGO,bottle,10,0.0746268656716,4,0.1
+lego,LEGO,wine glass,0,0,0,0
+lego,LEGO,cup,9,0.0671641791045,5,0.125
+lego,LEGO,fork,0,0,0,0
+lego,LEGO,knife,0,0,0,0
+lego,LEGO,spoon,0,0,0,0
+lego,LEGO,bowl,4,0.0298507462687,1,0.025
+lego,LEGO,banana,0,0,0,0
+lego,LEGO,apple,0,0,0,0
+lego,LEGO,sandwich,0,0,0,0
+lego,LEGO,orange,1,0.00746268656716,1,0.025
+lego,LEGO,broccoli,0,0,0,0
+lego,LEGO,carrot,0,0,0,0
+lego,LEGO,hot dog,0,0,0,0
+lego,LEGO,pizza,0,0,0,0
+lego,LEGO,donut,0,0,0,0
+lego,LEGO,cake,6,0.044776119403,4,0.1
+lego,LEGO,chair,1,0.00746268656716,1,0.025
+lego,LEGO,couch,0,0,0,0
+lego,LEGO,potted plant,4,0.0298507462687,3,0.075
+lego,LEGO,bed,2,0.0149253731343,2,0.05
+lego,LEGO,dining table,3,0.0223880597015,3,0.075
+lego,LEGO,toilet,0,0,0,0
+lego,LEGO,tv,0,0,0,0
+lego,LEGO,laptop,1,0.00746268656716,1,0.025
+lego,LEGO,mouse,0,0,0,0
+lego,LEGO,remote,0,0,0,0
+lego,LEGO,keyboard,0,0,0,0
+lego,LEGO,cell phone,1,0.00746268656716,1,0.025
+lego,LEGO,microwave,0,0,0,0
+lego,LEGO,oven,0,0,0,0
+lego,LEGO,toaster,0,0,0,0
+lego,LEGO,sink,0,0,0,0
+lego,LEGO,refrigerator,0,0,0,0
+lego,LEGO,book,1,0.00746268656716,1,0.025
+lego,LEGO,clock,5,0.0373134328358,5,0.125
+lego,LEGO,vase,2,0.0149253731343,2,0.05
+lego,LEGO,scissors,1,0.00746268656716,1,0.025
+lego,LEGO,teddy bear,3,0.0223880597015,2,0.05
+lego,LEGO,hair drier,0,0,0,0
+lego,LEGO,toothbrush,1,0.00746268656716,1,0.025
+oura,Oura,person,38,0.436781609195,27,0.675
+oura,Oura,bicycle,0,0,0,0
+oura,Oura,car,5,0.0574712643678,2,0.05
+oura,Oura,motorcycle,0,0,0,0
+oura,Oura,airplane,0,0,0,0
+oura,Oura,bus,0,0,0,0
+oura,Oura,train,0,0,0,0
+oura,Oura,truck,0,0,0,0
+oura,Oura,boat,0,0,0,0
+oura,Oura,traffic light,2,0.0229885057471,1,0.025
+oura,Oura,fire hydrant,0,0,0,0
+oura,Oura,stop sign,0,0,0,0
+oura,Oura,parking meter,0,0,0,0
+oura,Oura,bench,0,0,0,0
+oura,Oura,bird,0,0,0,0
+oura,Oura,cat,0,0,0,0
+oura,Oura,dog,0,0,0,0
+oura,Oura,horse,0,0,0,0
+oura,Oura,sheep,0,0,0,0
+oura,Oura,cow,0,0,0,0
+oura,Oura,elephant,0,0,0,0
+oura,Oura,bear,0,0,0,0
+oura,Oura,zebra,0,0,0,0
+oura,Oura,giraffe,0,0,0,0
+oura,Oura,backpack,0,0,0,0
+oura,Oura,umbrella,0,0,0,0
+oura,Oura,handbag,0,0,0,0
+oura,Oura,tie,0,0,0,0
+oura,Oura,suitcase,0,0,0,0
+oura,Oura,frisbee,0,0,0,0
+oura,Oura,skis,0,0,0,0
+oura,Oura,snowboard,0,0,0,0
+oura,Oura,sports ball,5,0.0574712643678,4,0.1
+oura,Oura,kite,1,0.0114942528736,1,0.025
+oura,Oura,baseball bat,0,0,0,0
+oura,Oura,baseball glove,2,0.0229885057471,1,0.025
+oura,Oura,skateboard,0,0,0,0
+oura,Oura,surfboard,0,0,0,0
+oura,Oura,tennis racket,0,0,0,0
+oura,Oura,bottle,0,0,0,0
+oura,Oura,wine glass,1,0.0114942528736,1,0.025
+oura,Oura,cup,2,0.0229885057471,1,0.025
+oura,Oura,fork,0,0,0,0
+oura,Oura,knife,0,0,0,0
+oura,Oura,spoon,0,0,0,0
+oura,Oura,bowl,1,0.0114942528736,1,0.025
+oura,Oura,banana,0,0,0,0
+oura,Oura,apple,0,0,0,0
+oura,Oura,sandwich,0,0,0,0
+oura,Oura,orange,1,0.0114942528736,1,0.025
+oura,Oura,broccoli,0,0,0,0
+oura,Oura,carrot,1,0.0114942528736,1,0.025
+oura,Oura,hot dog,0,0,0,0
+oura,Oura,pizza,0,0,0,0
+oura,Oura,donut,0,0,0,0
+oura,Oura,cake,1,0.0114942528736,1,0.025
+oura,Oura,chair,1,0.0114942528736,1,0.025
+oura,Oura,couch,1,0.0114942528736,1,0.025
+oura,Oura,potted plant,0,0,0,0
+oura,Oura,bed,2,0.0229885057471,2,0.05
+oura,Oura,dining table,2,0.0229885057471,2,0.05
+oura,Oura,toilet,0,0,0,0
+oura,Oura,tv,2,0.0229885057471,1,0.025
+oura,Oura,laptop,0,0,0,0
+oura,Oura,mouse,1,0.0114942528736,1,0.025
+oura,Oura,remote,7,0.0804597701149,3,0.075
+oura,Oura,keyboard,1,0.0114942528736,1,0.025
+oura,Oura,cell phone,5,0.0574712643678,5,0.125
+oura,Oura,microwave,0,0,0,0
+oura,Oura,oven,1,0.0114942528736,1,0.025
+oura,Oura,toaster,0,0,0,0
+oura,Oura,sink,0,0,0,0
+oura,Oura,refrigerator,0,0,0,0
+oura,Oura,book,3,0.0344827586207,2,0.05
+oura,Oura,clock,0,0,0,0
+oura,Oura,vase,0,0,0,0
+oura,Oura,scissors,0,0,0,0
+oura,Oura,teddy bear,0,0,0,0
+oura,Oura,hair drier,0,0,0,0
+oura,Oura,toothbrush,1,0.0114942528736,1,0.025
+sennheiser,Sennheiser,person,39,0.458823529412,33,0.825
+sennheiser,Sennheiser,bicycle,0,0,0,0
+sennheiser,Sennheiser,car,3,0.0352941176471,2,0.05
+sennheiser,Sennheiser,motorcycle,0,0,0,0
+sennheiser,Sennheiser,airplane,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,bus,0,0,0,0
+sennheiser,Sennheiser,train,0,0,0,0
+sennheiser,Sennheiser,truck,0,0,0,0
+sennheiser,Sennheiser,boat,0,0,0,0
+sennheiser,Sennheiser,traffic light,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,fire hydrant,0,0,0,0
+sennheiser,Sennheiser,stop sign,0,0,0,0
+sennheiser,Sennheiser,parking meter,0,0,0,0
+sennheiser,Sennheiser,bench,0,0,0,0
+sennheiser,Sennheiser,bird,0,0,0,0
+sennheiser,Sennheiser,cat,0,0,0,0
+sennheiser,Sennheiser,dog,0,0,0,0
+sennheiser,Sennheiser,horse,0,0,0,0
+sennheiser,Sennheiser,sheep,0,0,0,0
+sennheiser,Sennheiser,cow,0,0,0,0
+sennheiser,Sennheiser,elephant,0,0,0,0
+sennheiser,Sennheiser,bear,0,0,0,0
+sennheiser,Sennheiser,zebra,0,0,0,0
+sennheiser,Sennheiser,giraffe,0,0,0,0
+sennheiser,Sennheiser,backpack,0,0,0,0
+sennheiser,Sennheiser,umbrella,0,0,0,0
+sennheiser,Sennheiser,handbag,0,0,0,0
+sennheiser,Sennheiser,tie,2,0.0235294117647,2,0.05
+sennheiser,Sennheiser,suitcase,0,0,0,0
+sennheiser,Sennheiser,frisbee,0,0,0,0
+sennheiser,Sennheiser,skis,0,0,0,0
+sennheiser,Sennheiser,snowboard,0,0,0,0
+sennheiser,Sennheiser,sports ball,0,0,0,0
+sennheiser,Sennheiser,kite,0,0,0,0
+sennheiser,Sennheiser,baseball bat,0,0,0,0
+sennheiser,Sennheiser,baseball glove,0,0,0,0
+sennheiser,Sennheiser,skateboard,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,surfboard,0,0,0,0
+sennheiser,Sennheiser,tennis racket,2,0.0235294117647,2,0.05
+sennheiser,Sennheiser,bottle,0,0,0,0
+sennheiser,Sennheiser,wine glass,0,0,0,0
+sennheiser,Sennheiser,cup,7,0.0823529411765,4,0.1
+sennheiser,Sennheiser,fork,0,0,0,0
+sennheiser,Sennheiser,knife,0,0,0,0
+sennheiser,Sennheiser,spoon,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,bowl,0,0,0,0
+sennheiser,Sennheiser,banana,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,apple,0,0,0,0
+sennheiser,Sennheiser,sandwich,0,0,0,0
+sennheiser,Sennheiser,orange,0,0,0,0
+sennheiser,Sennheiser,broccoli,0,0,0,0
+sennheiser,Sennheiser,carrot,0,0,0,0
+sennheiser,Sennheiser,hot dog,0,0,0,0
+sennheiser,Sennheiser,pizza,0,0,0,0
+sennheiser,Sennheiser,donut,0,0,0,0
+sennheiser,Sennheiser,cake,0,0,0,0
+sennheiser,Sennheiser,chair,3,0.0352941176471,2,0.05
+sennheiser,Sennheiser,couch,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,potted plant,0,0,0,0
+sennheiser,Sennheiser,bed,0,0,0,0
+sennheiser,Sennheiser,dining table,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,toilet,5,0.0588235294118,3,0.075
+sennheiser,Sennheiser,tv,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,laptop,3,0.0352941176471,2,0.05
+sennheiser,Sennheiser,mouse,0,0,0,0
+sennheiser,Sennheiser,remote,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,keyboard,0,0,0,0
+sennheiser,Sennheiser,cell phone,9,0.105882352941,8,0.2
+sennheiser,Sennheiser,microwave,0,0,0,0
+sennheiser,Sennheiser,oven,0,0,0,0
+sennheiser,Sennheiser,toaster,0,0,0,0
+sennheiser,Sennheiser,sink,0,0,0,0
+sennheiser,Sennheiser,refrigerator,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,book,0,0,0,0
+sennheiser,Sennheiser,clock,0,0,0,0
+sennheiser,Sennheiser,vase,0,0,0,0
+sennheiser,Sennheiser,scissors,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,teddy bear,0,0,0,0
+sennheiser,Sennheiser,hair drier,1,0.0117647058824,1,0.025
+sennheiser,Sennheiser,toothbrush,0,0,0,0
+stanley,Stanley,person,25,0.245098039216,21,0.525
+stanley,Stanley,bicycle,0,0,0,0
+stanley,Stanley,car,2,0.0196078431373,2,0.05
+stanley,Stanley,motorcycle,0,0,0,0
+stanley,Stanley,airplane,0,0,0,0
+stanley,Stanley,bus,0,0,0,0
+stanley,Stanley,train,0,0,0,0
+stanley,Stanley,truck,0,0,0,0
+stanley,Stanley,boat,0,0,0,0
+stanley,Stanley,traffic light,1,0.00980392156863,1,0.025
+stanley,Stanley,fire hydrant,0,0,0,0
+stanley,Stanley,stop sign,0,0,0,0
+stanley,Stanley,parking meter,1,0.00980392156863,1,0.025
+stanley,Stanley,bench,2,0.0196078431373,2,0.05
+stanley,Stanley,bird,0,0,0,0
+stanley,Stanley,cat,1,0.00980392156863,1,0.025
+stanley,Stanley,dog,0,0,0,0
+stanley,Stanley,horse,0,0,0,0
+stanley,Stanley,sheep,0,0,0,0
+stanley,Stanley,cow,0,0,0,0
+stanley,Stanley,elephant,0,0,0,0
+stanley,Stanley,bear,0,0,0,0
+stanley,Stanley,zebra,0,0,0,0
+stanley,Stanley,giraffe,0,0,0,0
+stanley,Stanley,backpack,0,0,0,0
+stanley,Stanley,umbrella,0,0,0,0
+stanley,Stanley,handbag,1,0.00980392156863,1,0.025
+stanley,Stanley,tie,0,0,0,0
+stanley,Stanley,suitcase,2,0.0196078431373,2,0.05
+stanley,Stanley,frisbee,0,0,0,0
+stanley,Stanley,skis,0,0,0,0
+stanley,Stanley,snowboard,0,0,0,0
+stanley,Stanley,sports ball,6,0.0588235294118,2,0.05
+stanley,Stanley,kite,0,0,0,0
+stanley,Stanley,baseball bat,0,0,0,0
+stanley,Stanley,baseball glove,0,0,0,0
+stanley,Stanley,skateboard,1,0.00980392156863,1,0.025
+stanley,Stanley,surfboard,0,0,0,0
+stanley,Stanley,tennis racket,0,0,0,0
+stanley,Stanley,bottle,18,0.176470588235,7,0.175
+stanley,Stanley,wine glass,0,0,0,0
+stanley,Stanley,cup,15,0.147058823529,9,0.225
+stanley,Stanley,fork,0,0,0,0
+stanley,Stanley,knife,0,0,0,0
+stanley,Stanley,spoon,0,0,0,0
+stanley,Stanley,bowl,0,0,0,0
+stanley,Stanley,banana,0,0,0,0
+stanley,Stanley,apple,0,0,0,0
+stanley,Stanley,sandwich,0,0,0,0
+stanley,Stanley,orange,0,0,0,0
+stanley,Stanley,broccoli,0,0,0,0
+stanley,Stanley,carrot,0,0,0,0
+stanley,Stanley,hot dog,0,0,0,0
+stanley,Stanley,pizza,0,0,0,0
+stanley,Stanley,donut,0,0,0,0
+stanley,Stanley,cake,0,0,0,0
+stanley,Stanley,chair,1,0.00980392156863,1,0.025
+stanley,Stanley,couch,0,0,0,0
+stanley,Stanley,potted plant,2,0.0196078431373,2,0.05
+stanley,Stanley,bed,0,0,0,0
+stanley,Stanley,dining table,3,0.0294117647059,3,0.075
+stanley,Stanley,toilet,0,0,0,0
+stanley,Stanley,tv,0,0,0,0
+stanley,Stanley,laptop,0,0,0,0
+stanley,Stanley,mouse,0,0,0,0
+stanley,Stanley,remote,2,0.0196078431373,1,0.025
+stanley,Stanley,keyboard,0,0,0,0
+stanley,Stanley,cell phone,4,0.0392156862745,4,0.1
+stanley,Stanley,microwave,0,0,0,0
+stanley,Stanley,oven,1,0.00980392156863,1,0.025
+stanley,Stanley,toaster,0,0,0,0
+stanley,Stanley,sink,0,0,0,0
+stanley,Stanley,refrigerator,0,0,0,0
+stanley,Stanley,book,0,0,0,0
+stanley,Stanley,clock,1,0.00980392156863,1,0.025
+stanley,Stanley,vase,13,0.127450980392,5,0.125
+stanley,Stanley,scissors,0,0,0,0
+stanley,Stanley,teddy bear,0,0,0,0
+stanley,Stanley,hair drier,0,0,0,0
+stanley,Stanley,toothbrush,0,0,0,0

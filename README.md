@@ -10,6 +10,7 @@ assignment1.html           Image encoders and KNN
 assignment2.html           Time-series forecasting
 assignment3.html           FaceNet and CNN comparison
 midterm.html               Document retrieval, OCR and optional LLM judge
+assignment4.html           Lane Crawford brand imagery analysis
 style.css                  Shared page styles
 assets/assignment1/        Assignment 1 presentation images
 assets/assignment2/        Assignment 2 presentation figures
@@ -35,6 +36,8 @@ references use the new locations; the public `assignment1.html` URL is unchanged
 - [Assignment 3](https://iwanttosleeeep.github.io/DL-portfolio/assignment3.html): FaceNet freezing strategies, CNN comparison and inference audit.
 
 - [Midterm](https://iwanttosleeeep.github.io/DL-portfolio/midterm.html): document retrieval with hybrid ranking, intent routing, OCR and an optional local judge.
+
+- [Assignment 4](https://iwanttosleeeep.github.io/DL-portfolio/assignment4.html): YOLO11n, ResNet18 and EasyOCR analysis of 400 curated brand images.
 
 ## Content and provenance
 
@@ -69,3 +72,18 @@ python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
 Open http://127.0.0.1:8765/. The same HTML/CSS and assets are served on GitHub Pages.
+
+## Assignment 4 archive
+
+`code/assignment4/` preserves original collection, inference, analysis and audit
+scripts. `results/assignment4/` contains corrected brand-level tables, cross-model
+intersections, similarity pairs, sensitivity checks and verification summaries.
+`assets/assignment4/` contains six statistical figures copied from the completed
+project. The page follows the final 12 November report and corrected integration.
+
+The public snapshot uses aggregate figures and tables. The original image corpus,
+full report, transcripts, account tracker, model weights and runtime caches remain
+in the local coursework archive. Model inference was not rerun for publication.
+The original audit had three machine-check failures; the later corrected
+integration passed 2,145/2,145 consistency checks. Dataset curation and source
+concentration limit representativeness, and recognition accuracy is unmeasured.

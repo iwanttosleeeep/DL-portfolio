@@ -1,0 +1,46 @@
+brand_a,brand_b,brand_a_display,brand_b_display,yolo_normalized_composition_similarity,yolo_raw_count_similarity,resnet_mean_pairwise_cosine,resnet_n_image_pairs,yolo_normalized_composition_similarity_rank,resnet_mean_pairwise_cosine_rank
+bang-olufsen,fortnum-mason,Bang & Olufsen,Fortnum & Mason,0.366518757564,0.412698412698,0.579209792606,1600,23,32
+bang-olufsen,herman-miller,Bang & Olufsen,Herman Miller,0.430018275967,0.296577946768,0.605593460576,1600,18,11
+bang-olufsen,jellycat,Bang & Olufsen,Jellycat,0.117901060734,0.12389380531,0.560627219635,1600,42,42
+bang-olufsen,jo-malone-london,Bang & Olufsen,Jo Malone London,0.439951405762,0.457516339869,0.604513018368,1600,15,12
+bang-olufsen,kodak,Bang & Olufsen,Kodak,0.373328164373,0.388888888889,0.573223655451,1600,22,37
+bang-olufsen,lego,Bang & Olufsen,LEGO,0.626865671642,0.467661691542,0.575292390495,1600,3,35
+bang-olufsen,oura,Bang & Olufsen,Oura,0.627037227655,0.584415584416,0.589974022234,1600,2,27
+bang-olufsen,sennheiser,Bang & Olufsen,Sennheiser,0.604741000878,0.552631578947,0.61658893217,1600,6,3
+bang-olufsen,stanley,Bang & Olufsen,Stanley,0.457857769974,0.485207100592,0.598806155871,1600,13,15
+fortnum-mason,herman-miller,Fortnum & Mason,Herman Miller,0.322697186983,0.325459317585,0.587709042797,1600,25,29
+fortnum-mason,jellycat,Fortnum & Mason,Jellycat,0.177970423253,0.168604651163,0.597190026649,1600,37,19
+fortnum-mason,jo-malone-london,Fortnum & Mason,Jo Malone London,0.595537397863,0.487084870849,0.611562791596,1600,8,6
+fortnum-mason,kodak,Fortnum & Mason,Kodak,0.272516672517,0.221374045802,0.560434183664,1600,31,43
+fortnum-mason,lego,Fortnum & Mason,LEGO,0.468656716418,0.457680250784,0.611102547678,1600,12,7
+fortnum-mason,oura,Fortnum & Mason,Oura,0.286548617583,0.308823529412,0.56503425449,1600,30,40
+fortnum-mason,sennheiser,Fortnum & Mason,Sennheiser,0.30333863275,0.311111111111,0.581677975662,1600,27,31
+fortnum-mason,stanley,Fortnum & Mason,Stanley,0.525808161102,0.529616724739,0.598196381902,1600,9,16
+herman-miller,jellycat,Herman Miller,Jellycat,0.139905018611,0.129577464789,0.566750288766,1600,40,39
+herman-miller,jo-malone-london,Herman Miller,Jo Malone London,0.296274323683,0.304964539007,0.607225185665,1600,28,10
+herman-miller,kodak,Herman Miller,Kodak,0.24814471243,0.197802197802,0.563156734668,1600,32,41
+herman-miller,lego,Herman Miller,LEGO,0.221824550716,0.224242424242,0.59220567125,1600,34,23
+herman-miller,oura,Herman Miller,Oura,0.239971850809,0.204946996466,0.572591502649,1600,33,38
+herman-miller,sennheiser,Herman Miller,Sennheiser,0.18793517407,0.20640569395,0.599708579622,1600,36,14
+herman-miller,stanley,Herman Miller,Stanley,0.221288515406,0.241610738255,0.591732642016,1600,35,25
+jellycat,jo-malone-london,Jellycat,Jo Malone London,0.170396372678,0.171428571429,0.586702817088,1600,39,30
+jellycat,kodak,Jellycat,Kodak,0.0762884913828,0.0762711864407,0.551501970663,1600,45,45
+jellycat,lego,Jellycat,LEGO,0.170562282925,0.17747440273,0.591800727245,1600,38,24
+jellycat,oura,Jellycat,Oura,0.106701366298,0.0975609756098,0.559423779549,1600,44,44
+jellycat,sennheiser,Jellycat,Sennheiser,0.11157972623,0.131147540984,0.573920361828,1600,43,36
+jellycat,stanley,Jellycat,Stanley,0.125786163522,0.145593869732,0.577450267286,1600,41,34
+jo-malone-london,kodak,Jo Malone London,Kodak,0.36454243431,0.38036809816,0.597753605155,1600,24,18
+jo-malone-london,lego,Jo Malone London,LEGO,0.479694550503,0.463636363636,0.608355081921,1600,11,8
+jo-malone-london,oura,Jo Malone London,Oura,0.381716118685,0.381502890173,0.596192461144,1600,21,21
+jo-malone-london,sennheiser,Jo Malone London,Sennheiser,0.431326949384,0.432748538012,0.615449414402,1600,17,4
+jo-malone-london,stanley,Jo Malone London,Stanley,0.700638394893,0.670212765957,0.618800867076,1600,1,2
+kodak,lego,Kodak,LEGO,0.289591006009,0.227488151659,0.597029662614,1600,29,20
+kodak,oura,Kodak,Oura,0.412151067323,0.40243902439,0.588924284029,1600,19,28
+kodak,sennheiser,Kodak,Sennheiser,0.397249809015,0.395061728395,0.600645822178,1600,20,13
+kodak,stanley,Kodak,Stanley,0.318818436465,0.301675977654,0.590887627785,1600,26,26
+lego,oura,LEGO,Oura,0.617086978899,0.524886877828,0.578999058852,1600,5,33
+lego,sennheiser,LEGO,Sennheiser,0.5992976295,0.502283105023,0.598083990307,1600,7,17
+lego,stanley,LEGO,Stanley,0.503072870939,0.491525423729,0.607397780161,1600,10,9
+oura,sennheiser,Oura,Sennheiser,0.622582826234,0.627906976744,0.615042952547,1600,4,5
+oura,stanley,Oura,Stanley,0.456389452333,0.47619047619,0.595765574918,1600,14,22
+sennheiser,stanley,Sennheiser,Stanley,0.439215686275,0.459893048128,0.620489729696,1600,16,1

@@ -1,0 +1,6 @@
+brand,brand_display,yolo_class,resnet_class,n_images,yolo_images,resnet_images,both_images,yolo_only_images,resnet_only_images,either_images,neither_images,ocr_name_images,yolo_and_ocr_name,resnet_and_ocr_name,all_three,either_and_ocr_name,yolo_without_ocr_name
+jellycat,Jellycat,teddy bear,teddy,40,33,22,19,14,3,36,4,11,9,4,4,9,24
+herman-miller,Herman Miller,chair,desk,40,31,8,8,23,0,31,9,2,1,0,0,1,30
+jo-malone-london,Jo Malone London,bottle,perfume,40,10,10,1,9,9,19,21,24,7,8,1,14,3
+kodak,Kodak,cell phone,Polaroid camera,40,15,6,4,11,2,17,23,28,9,5,3,11,6
+lego,LEGO,person,toyshop,40,20,11,7,13,4,24,16,4,2,2,1,3,18

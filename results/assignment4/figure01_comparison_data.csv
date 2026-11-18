@@ -1,0 +1,11 @@
+brand,brand_display,yolo_person_pct,resnet_modal_pct,ocr_text_pct,ocr_name_pct,ocr_mean_tokens,ocr_median_tokens
+bang-olufsen,Bang & Olufsen,52.5,10,25,7.5,1.525,0
+fortnum-mason,Fortnum & Mason,17.5,17.5,80,30,11.2,7.5
+herman-miller,Herman Miller,22.5,20,50,5,4.4,0.5
+jellycat,Jellycat,7.5,55,57.5,27.5,3.35,1
+jo-malone-london,Jo Malone London,30,25,82.5,60,6.525,5
+kodak,Kodak,30,15,95,70,11.975,10
+lego,LEGO,50,27.5,87.5,10,5.225,3
+oura,Oura,67.5,7.5,72.5,35,10.2,6.5
+sennheiser,Sennheiser,82.5,7.5,57.5,30,5.725,1
+stanley,Stanley,52.5,12.5,80,47.5,3.725,2.5

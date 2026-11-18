@@ -1,0 +1,11 @@
+{
+  "checks": 2145,
+  "passed": 2145,
+  "failed": 0,
+  "failed_checks": [],
+  "preserved_original_and_audit_files": 1148,
+  "original_audit_baseline_files": 1090,
+  "new_statistics_source": "frozen prediction tables, OCR raw JSONL and ResNet18 embeddings; no inference run",
+  "figure_review_record": "FIGURE_REVIEW.md",
+  "scope": "Verification is numerical consistency and visual QA, not model accuracy or source authentication."
+}

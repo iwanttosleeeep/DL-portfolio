@@ -1,0 +1,19 @@
+{
+  "n_brands": 10,
+  "n_images": 400,
+  "n_posts": 350,
+  "yolo_normalized_offdiagonal_mean": 0.36282946450100756,
+  "yolo_raw_count_offdiagonal_mean": 0.347246486613125,
+  "resnet_within_unique_pairs": 7800,
+  "resnet_between_unique_pairs": 72000,
+  "resnet_within_mean": 0.6401175363006475,
+  "resnet_between_mean": 0.5906827620649433,
+  "similarity_pair_rank_spearman": 0.6168642951251645,
+  "similarity_rank_correlation_note": "Descriptive only; 45 brand pairs share endpoints and are not independent observations.",
+  "jo_malone_official_images": 27,
+  "jo_malone_official_image_share": 0.675,
+  "figures": 4,
+  "supplementary_dominant_class_share": "recomputed by explicit modal-class lookup; not used as a brand recognition score",
+  "pair_convention": "780 unordered within-brand pairs; 1600 cross-brand pairs per distinct brand pair",
+  "manual_curation_note": "Final manual curation was not a separate model experiment and has no separate supplied AI-session transcript."
+}

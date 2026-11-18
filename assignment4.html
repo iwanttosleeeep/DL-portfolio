@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 4 - STAT6207 Portfolio</title>
+  <meta name="description" content="Lane Crawford brand imagery analysis across 400 Instagram images using YOLO11n, ResNet18 and EasyOCR.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>STAT6207 Applied Deep Learning</h1>
+    <p class="subtitle">Coursework Portfolio &middot; Assignment 4</p>
+  </div>
+</header>
+
+<nav aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="assignment1.html">Assignment 1</a>
+  <a href="assignment2.html">Assignment 2</a>
+  <a href="assignment3.html">Assignment 3</a>
+  <a href="midterm.html">Midterm</a>
+  <a href="assignment4.html" aria-current="page">Assignment 4</a>
+</nav>
+
+<main><div class="container">
+<div class="page-intro"><h2>Lane Crawford Brand Discovery</h2><p>Topic 2 · Instagram image analysis · 12 November 2026</p><p><a href="https://github.com/iwanttosleeeep/DL-portfolio/tree/main/code/assignment4">Browse assignment code →</a></p></div>
+
+<section class="section" id="section-1">
+<h2>1. Objective</h2>
+<p>Assignment 4, Topic 2 investigates the Instagram imagery of ten Lane Crawford brands using three pretrained models. YOLO11n provides object and scene-context detections, ResNet18 provides ImageNet categories and global features, and EasyOCR provides readable text and target-name matches.</p>
+<p>The analysis compares product-category recurrence, feature cohesion and textual naming across the same curated images. The findings describe the collected imagery and its model-derived representations.</p>
+<div class="highlight"><p><strong>Dataset and scope.</strong> 400 images, 40 per brand, from 350 distinct Instagram posts. All three models use the frozen image set with pretrained weights and inference-only processing.</p></div>
+</section>
+
+<section class="section" id="section-2">
+<h2>2. Brand Selection &amp; Image Collection</h2>
+<p>Selection began with 407 Home &amp; Lifestyle entries from Lane Crawford's Hong Kong brand directory. Recorded product availability, category coverage and English Wikipedia pageviews for November 2025–October 2026 informed the initial selection. Jellycat and Stanley were required, with a maximum of two brands per assigned category.</p>
+<p>Access barriers and product availability led to replacements during collection. The final ten span toys, audio, drinkware, cameras/imaging, fragrance, food, furniture and personal electronics. The selection is purposive, and Wikipedia pageviews serve as an attention proxy.</p><div class="table-scroll" role="region" aria-label="Final image counts and distinct posts by brand" tabindex="0"><table><caption>Final image counts and distinct posts by brand</caption><thead><tr><th scope="col">Brand</th><th scope="col">Images</th><th scope="col">Distinct posts</th></tr></thead><tbody><tr><th scope="row">Bang &amp; Olufsen</th><td>40</td><td>36</td></tr><tr><th scope="row">Fortnum &amp; Mason</th><td>40</td><td>30</td></tr><tr><th scope="row">Herman Miller</th><td>40</td><td>35</td></tr><tr><th scope="row">Jellycat</th><td>40</td><td>36</td></tr><tr><th scope="row">Jo Malone London</th><td>40</td><td>40</td></tr><tr><th scope="row">Kodak</th><td>40</td><td>39</td></tr><tr><th scope="row">LEGO</th><td>40</td><td>32</td></tr><tr><th scope="row">Oura</th><td>40</td><td>34</td></tr><tr><th scope="row">Sennheiser</th><td>40</td><td>38</td></tr><tr><th scope="row">Stanley</th><td>40</td><td>30</td></tr></tbody></table></div><p>AI-assisted searches identified candidate official, retailer, media and creator accounts. Human review selected relevant images and reduced repetition. Scripts supported organization, hashing and duplicate checks. The final source records contain 224 automated fetches, 175 manual collections and one user-supplied attachment.</p>
+<p>Fifty images are additional frames from already represented posts. Missing source fields, uneven campaign exposure and dates spanning 2016–2026 constrain the sample's representativeness.</p>
+</section>
+
+<section class="section" id="section-3">
+<h2>3. Pretrained Models &amp; Measurements</h2>
+<div class="table-scroll" role="region" aria-label="Recorded inference settings and outputs" tabindex="0"><table><caption>Recorded inference settings and outputs</caption><thead><tr><th scope="col">Model</th><th scope="col">Settings</th><th scope="col">Measurements</th></tr></thead><tbody><tr><th scope="row">YOLO11n</th><td>COCO, 80 classes; 640 × 640 letterbox; confidence ≥0.25; NMS IoU 0.45</td><td>Boxes, class presence, pooled object composition</td></tr><tr><th scope="row">ResNet18</th><td>ImageNet-1K V1; RGB resize 256, center crop 224; standard normalization</td><td>Top-1/5 categories, 512-dimensional pooled features</td></tr><tr><th scope="row">EasyOCR</th><td>CRAFT + english_g2; English; retained recognition confidence ≥0.30</td><td>Text regions, tokens, normalized exact target aliases</td></tr></tbody></table></div><p>Recorded model inference used Apple Silicon MPS and FP32. Images with zero detections or zero retained text remain in all image-level denominators.</p>
+<p>ResNet class diversity uses Shannon entropy over the 40 top-one labels. Feature cohesion uses mean cosine similarity over <strong>780 unique unordered pairs per brand</strong>. Each distinct cross-brand pair contributes 1,600 image pairs.</p>
+<p>YOLO composition divides each class's detection count by the brand's total detections. Similarity is <code>1 − 0.5 × Σ |p(a) − p(b)|</code>. Images with many detected objects contribute more events to this pooled composition. The cohesion gap subtracts similarity to the other brands from within-brand similarity.</p>
+</section>
+
+<section class="section" id="section-4">
+<h2>4. Overall Model Outputs</h2>
+<div class="table-scroll" role="region" aria-label="Saved outputs across all 400 images" tabindex="0"><table><caption>Saved outputs across all 400 images</caption><thead><tr><th scope="col">Model</th><th scope="col">Output summary</th></tr></thead><tbody><tr><th scope="row">YOLO11n</th><td>1,178 detections; 358 nonzero images; 42 zero-detection images; 64 observed classes</td></tr><tr><th scope="row">ResNet18</th><td>203 distinct top-one classes; mean top-one probability 0.393</td></tr><tr><th scope="row">EasyOCR</th><td>1,817 of 2,970 regions retained; 2,554 tokens; 275 text-positive images</td></tr><tr><th scope="row">Target-name matching</th><td>212 exact normalized matches across 129 images</td></tr></tbody></table></div><figure class="figure"><a href="assets/assignment4/object_prevalence.png" aria-label="View full-size figure: Image prevalence of the 15 most frequent YOLO classes by brand"><img src="assets/assignment4/object_prevalence.png" alt="Image prevalence of the 15 most frequent YOLO classes by brand" loading="lazy"></a><figcaption>Figure 1. YOLO class presence, with each brand cell divided by 40. Select the figure to view it full size.</figcaption></figure><p>Jellycat's teddy-bear and Herman Miller's chair signals concentrate in their respective samples. The diagnostic review also found toy figures receiving person labels and specialized products receiving generic categories. These observations guide the interpretation of model outputs.</p>
+</section>
+
+<section class="section" id="section-5">
+<h2>5. Unified Brand Profiles</h2>
+<div class="table-scroll" role="region" aria-label="Category, feature and text measurements" tabindex="0"><table><caption>Category, feature and text measurements</caption><thead><tr><th scope="col">Brand</th><th scope="col">Leading YOLO class</th><th scope="col">ResNet mode</th><th scope="col">Entropy (bits)</th><th scope="col">Within cosine</th><th scope="col">OCR text</th><th scope="col">OCR name</th></tr></thead><tbody><tr><th scope="row">Bang &amp; Olufsen</th><td>person (21/40)</td><td>lens cap (4/40)</td><td>4.97</td><td>0.612</td><td>10/40</td><td>3/40</td></tr><tr><th scope="row">Fortnum &amp; Mason</th><td>cup (14/40)</td><td>hamper (7/40)</td><td>4.56</td><td>0.642</td><td>32/40</td><td>12/40</td></tr><tr><th scope="row">Herman Miller</th><td>chair (31/40)</td><td>desk (8/40)</td><td>4.09</td><td>0.665</td><td>20/40</td><td>2/40</td></tr><tr><th scope="row">Jellycat</th><td>teddy bear (33/40)</td><td>teddy (22/40)</td><td>2.75</td><td>0.647</td><td>23/40</td><td>11/40</td></tr><tr><th scope="row">Jo Malone London</th><td>bottle (10/40)</td><td>perfume (10/40)</td><td>4.39</td><td>0.646</td><td>33/40</td><td>24/40</td></tr><tr><th scope="row">Kodak</th><td>cell phone (15/40)</td><td>Polaroid camera (6/40)</td><td>4.52</td><td>0.626</td><td>38/40</td><td>28/40</td></tr><tr><th scope="row">LEGO</th><td>person (20/40)</td><td>toyshop (11/40)</td><td>3.98</td><td>0.656</td><td>35/40</td><td>4/40</td></tr><tr><th scope="row">Oura</th><td>person (27/40)</td><td>web site (3/40)</td><td>4.95</td><td>0.609</td><td>29/40</td><td>14/40</td></tr><tr><th scope="row">Sennheiser</th><td>person (33/40)</td><td>stethoscope (3/40)</td><td>4.77</td><td>0.657</td><td>23/40</td><td>12/40</td></tr><tr><th scope="row">Stanley</th><td>person (21/40)</td><td>bucket (5/40)</td><td>4.63</td><td>0.642</td><td>32/40</td><td>19/40</td></tr></tbody></table></div><p>The leading YOLO class is selected by total detections, while the displayed count gives images containing that class. Sennheiser has three tied ResNet modes, each occurring in three images. Full-precision profiles include the ties, token counts and cohesion gaps.</p><figure class="figure"><a href="assets/assignment4/unified_comparison.png" aria-label="View full-size figure: Person detections, modal category concentration, OCR text and names with token volume"><img src="assets/assignment4/unified_comparison.png" alt="Person detections, modal category concentration, OCR text and names with token volume" loading="lazy"></a><figcaption>Figure 2. Shared image denominators allow comparison of distinct measurements. Select the figure to view it full size.</figcaption></figure><figure class="figure"><a href="assets/assignment4/diversity_cohesion.png" aria-label="View full-size figure: Classification entropy compared with within-brand and between-brand feature similarity"><img src="assets/assignment4/diversity_cohesion.png" alt="Classification entropy compared with within-brand and between-brand feature similarity" loading="lazy"></a><figcaption>Figure 3. Label diversity and feature cohesion across ten image sets. Select the figure to view it full size.</figcaption></figure><p><strong>Jellycat</strong> has teddy-bear detections in 33/40 images, teddy top-one predictions in 22/40 and target-name matches in 11/40. Its class entropy is lowest at 2.75 bits. <strong>Herman Miller</strong> has chairs in 31/40, names in 2/40 and the highest within-brand cosine, 0.665.</p>
+<p><strong>Sennheiser</strong> combines 30 top-one labels and 4.77-bit entropy with relatively high cohesion, 0.657. <strong>Bang &amp; Olufsen and Oura</strong> have high label entropy and lower cohesion, while their text-positive counts differ substantially at 10/40 and 29/40.</p>
+</section>
+
+<section class="section" id="section-6">
+<h2>6. Complementary Evidence &amp; Diagnostic Cases</h2>
+<div class="table-scroll" role="region" aria-label="Same-image intersections, each out of 40 images" tabindex="0"><table><caption>Same-image intersections, each out of 40 images</caption><thead><tr><th scope="col">Brand</th><th scope="col">YOLO / ResNet cue</th><th scope="col">YOLO</th><th scope="col">ResNet</th><th scope="col">Both</th><th scope="col">Either</th><th scope="col">Either + name</th></tr></thead><tbody><tr><th scope="row">Jellycat</th><td>teddy bear / teddy</td><td>33</td><td>22</td><td>19</td><td>36</td><td>9</td></tr><tr><th scope="row">Herman Miller</th><td>chair / desk</td><td>31</td><td>8</td><td>8</td><td>31</td><td>1</td></tr><tr><th scope="row">Jo Malone London</th><td>bottle / perfume</td><td>10</td><td>10</td><td>1</td><td>19</td><td>14</td></tr><tr><th scope="row">Kodak</th><td>cell phone / Polaroid camera</td><td>15</td><td>6</td><td>4</td><td>17</td><td>11</td></tr><tr><th scope="row">LEGO</th><td>person / toyshop</td><td>20</td><td>11</td><td>7</td><td>24</td><td>3</td></tr></tbody></table></div><p><strong>Jo Malone London.</strong> Bottle detections and perfume classifications each occur in ten images, with only one shared image. Either signal appears in 19/40, including 14 with a target-name match. Local object detection and whole-image classification reach complementary images.</p>
+<p><strong>Kodak.</strong> Text appears in 38/40 images and target names in 28/40. In the reviewed camera-display example, seven compact cameras receive cell-phone detections and a switch classification, while OCR recovers eight Kodak matches. Text supplies evidence that the visual labels missed.</p>
+<p><strong>Fortnum &amp; Mason.</strong> Text appears in 32/40 images, averaging 11.20 tokens, while names match in 12/40. A reviewed example retains 35 regions but yields no target-name match because the OCR strings fragment and interleave the name.</p>
+<p><strong>LEGO.</strong> Toyshop is top one in 11/40 images and target names appear in 4/40. A reviewed building model with minifigures produces 13 person detections. Such labels require image-level interpretation.</p><figure class="figure"><a href="assets/assignment4/ocr_volume.png" aria-label="View full-size figure: Distributions of retained OCR regions and tokens per image"><img src="assets/assignment4/ocr_volume.png" alt="Distributions of retained OCR regions and tokens per image" loading="lazy"></a><figcaption>Figure 4. OCR volume distributions expose differences between typical images and text-heavy outliers. Select the figure to view it full size.</figcaption></figure>
+</section>
+
+<section class="section" id="section-7">
+<h2>7. Cross-Brand Similarity</h2>
+<figure class="figure"><a href="assets/assignment4/cross_brand_similarity.png" aria-label="View full-size figure: Normalized object composition similarity and mean cross-brand ResNet cosine matrices"><img src="assets/assignment4/cross_brand_similarity.png" alt="Normalized object composition similarity and mean cross-brand ResNet cosine matrices" loading="lazy"></a><figcaption>Figure 5. Two representations of cross-brand resemblance, with separate color scales. Select the figure to view it full size.</figcaption></figure><div class="table-scroll" role="region" aria-label="Selected pairs among all 45 brand pairs" tabindex="0"><table><caption>Selected pairs among all 45 brand pairs</caption><thead><tr><th scope="col">Pair</th><th scope="col">Object similarity</th><th scope="col">Rank</th><th scope="col">Feature cosine</th><th scope="col">Rank</th></tr></thead><tbody><tr><th scope="row">Jo Malone London / Stanley</th><td>0.7006</td><td>1</td><td>0.6188</td><td>2</td></tr><tr><th scope="row">Sennheiser / Stanley</th><td>0.4392</td><td>16</td><td>0.6205</td><td>1</td></tr><tr><th scope="row">Bang &amp; Olufsen / LEGO</th><td>0.6269</td><td>3</td><td>0.5753</td><td>35</td></tr><tr><th scope="row">Jellycat / Kodak</th><td>0.0763</td><td>45</td><td>0.5515</td><td>45</td></tr></tbody></table></div><p>Jo Malone–Stanley ranks first by object composition and second by feature cosine. Sennheiser–Stanley ranks first by feature cosine and sixteenth by objects. Bang &amp; Olufsen–LEGO ranks third by objects and thirty-fifth by cosine. Jellycat–Kodak ranks last under both measures.</p>
+<p>The rank correlation across the 45 pairs is 0.6169. Pairs share brand endpoints, so this is a descriptive summary. Overall within/between feature means are 0.6401/0.5907, with cosine silhouette 0.0377.</p><figure class="figure"><a href="assets/assignment4/pca.png" aria-label="View full-size figure: Two-dimensional PCA view of 400 normalized ResNet embeddings and brand centroids"><img src="assets/assignment4/pca.png" alt="Two-dimensional PCA view of 400 normalized ResNet embeddings and brand centroids" loading="lazy"></a><figcaption>Figure 6. PC1 and PC2 explain 10.34% of variance, giving a limited projection of the feature space. Select the figure to view it full size.</figcaption></figure>
+</section>
+
+<section class="section" id="section-8">
+<h2>8. Sampling &amp; Interpretation Limits</h2>
+<p>Jo Malone's official source contributes 27/40 images (67.5%), exceeding the original 20-image cap. Its official and other-source subsets have different measured text and object profiles.</p><div class="table-scroll" role="region" aria-label="Jo Malone source-stratified measurements" tabindex="0"><table><caption>Jo Malone source-stratified measurements</caption><thead><tr><th scope="col">Source group</th><th scope="col">Images</th><th scope="col">Person label</th><th scope="col">Target name</th><th scope="col">Mean tokens</th></tr></thead><tbody><tr><th scope="row">other known accounts</th><td>13</td><td>53.8%</td><td>38.5%</td><td>10.923</td></tr><tr><th scope="row">official jomalonelondon</th><td>27</td><td>18.5%</td><td>70.4%</td><td>4.407</td></tr></tbody></table></div><p>Equal-post weighting changes the examined person/text/name rates by at most 5.73 percentage points. Fortnum's name presence rises from 30.0% to 35.56%. Repeated frames, campaigns and account concentration remain relevant.</p>
+<p>The manifest contains missing account handles, source types, dates and carousel positions. Collection records cover uneven dates and purposively selected images. These qualifications limit claims about the brands' complete visual presence.</p>
+<p>Model vocabularies, image preprocessing and English-only OCR affect the measurements. Exact aliases can miss visible names or match erroneous strings. Ground-truth category labels and complete OCR transcriptions are unavailable, leaving recognition accuracy and comparative reliability unmeasured.</p>
+</section>
+
+<section class="section" id="section-9">
+<h2>9. Audit, Corrections &amp; Reproducibility</h2>
+<p>The original independent audit recorded 855 passing and three failing machine checks out of 858, alongside collection and interpretation findings. The integrated analysis subsequently repaired the modal-class summary, adopted unique unordered feature pairs and explicitly normalized YOLO composition.</p>
+<p>Corrected derived outputs include Oura's supplementary modal-class share of 3/5 = 0.60 and Jellycat's toyshop top-one count of 3/40. LEGO's corresponding count is 11/40. The subsequent integration verifier passed <strong>2,145/2,145 numerical consistency checks</strong>.</p>
+<p>Published source files preserve the original collection, inference, analysis and audit implementations. The setup guide explains required input paths and how the corrected integrated tables relate to historical experiment outputs.</p>
+<ul><li><a href="https://github.com/iwanttosleeeep/DL-portfolio/tree/main/code/assignment4">Source snapshots and setup guide</a></li>
+<li><a href="results/assignment4/unified_brand_profile.csv">Full-precision unified brand profiles</a></li>
+<li><a href="results/assignment4/cross_model_image_overlap.csv">Cross-model image intersections</a> and <a href="results/assignment4/cross_model_similarity_pairs.csv">45 cross-brand similarity pairs</a></li>
+<li><a href="results/assignment4/analysis_summary.json">Analysis summary</a> and <a href="results/assignment4/verification_summary.json">integration verification summary</a></li>
+<li><a href="results/assignment4/original_audit_summary.json">Original audit summary</a> and <a href="results/assignment4/METRICS.md">metric definitions and source map</a></li></ul>
+</section>
+
+<section class="section" id="section-10">
+<h2>10. Conclusion</h2>
+<p>The three models reveal category recurrence, feature cohesion and recovered naming as separate dimensions of the ten curated image sets. Jellycat and Herman Miller show recurring product/context cues with limited textual naming, Sennheiser combines diverse labels with cohesive features, and Kodak and Jo Malone illustrate the contribution of text and complementary image coverage.</p>
+<p>The resulting comparison characterizes sampled imagery and documents model behavior. Sampling constraints and unmeasured recognition accuracy bound its interpretation.</p>
+</section>
+<p class="back-link"><a href="index.html">← All coursework</a></p>
+</div></main>
+<footer>
+  <div class="container">
+    STAT6207 Applied Deep Learning &middot; Coursework Portfolio
+  </div>
+</footer>
+
+</body>
+</html>
